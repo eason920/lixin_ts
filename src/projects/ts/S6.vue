@@ -84,10 +84,12 @@ export default {
 
 @media screen and (min-width: $bp-pc)
   .s6boxp
-    height: 100vh
+    // height: 100vh
+    width: 53vw
     text-align: left
     img
-      height: 100%
+      // height: 100%
+      width: 100%
     // width: 55vw
 
 @media screen and (max-width: $bp-mb)

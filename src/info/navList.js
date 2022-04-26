@@ -1,8 +1,9 @@
 export default [
-  { name: '泰舍至善元', imgSrc: '', subTitle: '', section: 'sec2', svgSrc: '', offset: -100 },
-  { name: '絕色十美', imgSrc: '', subTitle: '', section: 'sec2-1', svgSrc: '', offset: -100 },
-  { name: '水岸地王', imgSrc: '', subTitle: '', section: 'sec4', svgSrc: '', offset: -100 },
-  { name: '鋼骨地標', imgSrc: '', subTitle: '', section: 's5', svgSrc: '', offset: -100 },
-  { name: '建築絕唱', imgSrc: '', subTitle: '', section: 's6', svgSrc: '', offset: -100 },
-  { name: '涵碧御所', imgSrc: '', subTitle: '', section: 'section8B', svgSrc: '', offset: -100 }
+  { name: '市心之城', imgSrc: '', subTitle: '', section: 'section3', svgSrc: '', offset: 0 },
+  { name: '機能核心', imgSrc: '', subTitle: '', section: 'section4', svgSrc: '', offset: -100 },
+  { name: '崗石鑄造', imgSrc: '', subTitle: '', section: 'section5', svgSrc: '', offset: -100 },
+  { name: '磐石工法', imgSrc: '', subTitle: '', section: 'section6', svgSrc: '', offset: -100 },
+  { name: '鋼柱結構', imgSrc: '', subTitle: '', section: 'section7', svgSrc: '', offset: -100 },
+  { name: '挑高4米2', imgSrc: '', subTitle: '', section: 'section8', svgSrc: '', offset: -100 },
+  { name: '千坪VIP', imgSrc: '', subTitle: '', section: 'section10', svgSrc: '', offset: -100 },
 ]

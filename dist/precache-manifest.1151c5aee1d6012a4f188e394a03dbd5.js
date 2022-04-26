@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/lixin_ts/dist/js/about.04c35b9e.js"
   },
   {
-    "revision": "94dea0e3a39049a83f53",
-    "url": "/lixin_ts/dist/css/app.80f54288.css"
+    "revision": "112ca1b195e95f65a2ae",
+    "url": "/lixin_ts/dist/css/app.4a11670c.css"
   },
   {
-    "revision": "94dea0e3a39049a83f53",
-    "url": "/lixin_ts/dist/js/app.10c3fadb.js"
+    "revision": "112ca1b195e95f65a2ae",
+    "url": "/lixin_ts/dist/js/app.50b77b7e.js"
   },
   {
     "revision": "d25da6e714d3b64b7512",
@@ -68,12 +68,12 @@ self.__precacheManifest = [
     "url": "/lixin_ts/dist/fonts/TimesNewRoman.bf0b0955.ttf"
   },
   {
-    "revision": "29e809ce652fa48524b591074304ee0b",
-    "url": "/lixin_ts/dist/fonts/DFPingJuStd-W7.29e809ce.otf"
-  },
-  {
     "revision": "c170287a7844ee7123464c2bdf487942",
     "url": "/lixin_ts/dist/fonts/DFLiSongStd-W5.c170287a.otf"
+  },
+  {
+    "revision": "29e809ce652fa48524b591074304ee0b",
+    "url": "/lixin_ts/dist/fonts/DFPingJuStd-W7.29e809ce.otf"
   },
   {
     "revision": "e317e3f067426bcb34761bc43c8e9419",
@@ -132,6 +132,10 @@ self.__precacheManifest = [
     "url": "/lixin_ts/dist/img/cft_m.bee5206e.png"
   },
   {
+    "revision": "176a9f87fa6517ad2c3bce5c6da1c2ff",
+    "url": "/lixin_ts/dist/img/mount.176a9f87.png"
+  },
+  {
     "revision": "833c893cd3052b2ec3fe9137eb6e8803",
     "url": "/lixin_ts/dist/img/img2m.833c893c.png"
   },
@@ -142,78 +146,6 @@ self.__precacheManifest = [
   {
     "revision": "c5fdffa469fc6a98b548da1711ea7bdb",
     "url": "/lixin_ts/dist/img/bgt.c5fdffa4.png"
-  },
-  {
-    "revision": "6b23e2ba62fcc495e2d6f87f5f17a05b",
-    "url": "/lixin_ts/dist/img/5.6b23e2ba.jpg"
-  },
-  {
-    "revision": "0ac9c571a9e1e405e13d9d2bed9cf9f1",
-    "url": "/lixin_ts/dist/img/4.0ac9c571.jpg"
-  },
-  {
-    "revision": "f316bb179e033322c7270aac539156f2",
-    "url": "/lixin_ts/dist/img/2.f316bb17.jpg"
-  },
-  {
-    "revision": "066ae6f81e84e8627d2f63a2773b29d6",
-    "url": "/lixin_ts/dist/img/1.066ae6f8.jpg"
-  },
-  {
-    "revision": "552c37826240cad47927b3c5d42e370e",
-    "url": "/lixin_ts/dist/img/3.552c3782.jpg"
-  },
-  {
-    "revision": "1659754993e35ce88152be87701b544c",
-    "url": "/lixin_ts/dist/img/src.16597549.png"
-  },
-  {
-    "revision": "404d35451cb0b4922435608c4d6f9b6f",
-    "url": "/lixin_ts/dist/img/1.404d3545.jpg"
-  },
-  {
-    "revision": "d1095c2044882712f1149b2a1bee9b20",
-    "url": "/lixin_ts/dist/img/thank-img.d1095c20.png"
-  },
-  {
-    "revision": "176a9f87fa6517ad2c3bce5c6da1c2ff",
-    "url": "/lixin_ts/dist/img/mount.176a9f87.png"
-  },
-  {
-    "revision": "3ae1b141cfe52db0a7de0059e8d96c8d",
-    "url": "/lixin_ts/dist/img/5.3ae1b141.jpg"
-  },
-  {
-    "revision": "a2be8edd9cbbcb93dcb660aa0fa21648",
-    "url": "/lixin_ts/dist/img/1.a2be8edd.jpg"
-  },
-  {
-    "revision": "70efe2476d76451ba4255a6c135e993f",
-    "url": "/lixin_ts/dist/img/2.70efe247.jpg"
-  },
-  {
-    "revision": "e2b109ec19a6c7d8be05e62e406910f2",
-    "url": "/lixin_ts/dist/img/4.e2b109ec.jpg"
-  },
-  {
-    "revision": "8ceac8f531b3f74548516585e45d9aee",
-    "url": "/lixin_ts/dist/img/3.8ceac8f5.jpg"
-  },
-  {
-    "revision": "788e8d03e81a9afacb1c1ae3f3e9f24a",
-    "url": "/lixin_ts/dist/img/img3.788e8d03.jpg"
-  },
-  {
-    "revision": "72023c81fefafa893f6539916749382f",
-    "url": "/lixin_ts/dist/img/bgw.72023c81.jpg"
-  },
-  {
-    "revision": "113058589913320f7cf731d251205e53",
-    "url": "/lixin_ts/dist/img/bg.11305858.png"
-  },
-  {
-    "revision": "cfc6abb6794bdfd7d9b6c4d9c95d9667",
-    "url": "/lixin_ts/dist/img/logo.cfc6abb6.png"
   },
   {
     "revision": "4309bce166646120375f4f9c467667e4",
@@ -240,10 +172,6 @@ self.__precacheManifest = [
     "url": "/lixin_ts/dist/img/5.5d387d3f.jpg"
   },
   {
-    "revision": "665d04ff711ee4fdccd8ac7f7ed77772",
-    "url": "/lixin_ts/dist/img/7.665d04ff.jpg"
-  },
-  {
     "revision": "a9e487e3a9e8de3cd451dd22eef81281",
     "url": "/lixin_ts/dist/img/8.a9e487e3.jpg"
   },
@@ -252,7 +180,79 @@ self.__precacheManifest = [
     "url": "/lixin_ts/dist/img/6.d727b4cf.jpg"
   },
   {
-    "revision": "91c53f85b62eb0bc664763d64259593d",
+    "revision": "665d04ff711ee4fdccd8ac7f7ed77772",
+    "url": "/lixin_ts/dist/img/7.665d04ff.jpg"
+  },
+  {
+    "revision": "1659754993e35ce88152be87701b544c",
+    "url": "/lixin_ts/dist/img/src.16597549.png"
+  },
+  {
+    "revision": "72023c81fefafa893f6539916749382f",
+    "url": "/lixin_ts/dist/img/bgw.72023c81.jpg"
+  },
+  {
+    "revision": "404d35451cb0b4922435608c4d6f9b6f",
+    "url": "/lixin_ts/dist/img/1.404d3545.jpg"
+  },
+  {
+    "revision": "d1095c2044882712f1149b2a1bee9b20",
+    "url": "/lixin_ts/dist/img/thank-img.d1095c20.png"
+  },
+  {
+    "revision": "3ae1b141cfe52db0a7de0059e8d96c8d",
+    "url": "/lixin_ts/dist/img/5.3ae1b141.jpg"
+  },
+  {
+    "revision": "a2be8edd9cbbcb93dcb660aa0fa21648",
+    "url": "/lixin_ts/dist/img/1.a2be8edd.jpg"
+  },
+  {
+    "revision": "70efe2476d76451ba4255a6c135e993f",
+    "url": "/lixin_ts/dist/img/2.70efe247.jpg"
+  },
+  {
+    "revision": "8ceac8f531b3f74548516585e45d9aee",
+    "url": "/lixin_ts/dist/img/3.8ceac8f5.jpg"
+  },
+  {
+    "revision": "e2b109ec19a6c7d8be05e62e406910f2",
+    "url": "/lixin_ts/dist/img/4.e2b109ec.jpg"
+  },
+  {
+    "revision": "788e8d03e81a9afacb1c1ae3f3e9f24a",
+    "url": "/lixin_ts/dist/img/img3.788e8d03.jpg"
+  },
+  {
+    "revision": "0ac9c571a9e1e405e13d9d2bed9cf9f1",
+    "url": "/lixin_ts/dist/img/4.0ac9c571.jpg"
+  },
+  {
+    "revision": "6b23e2ba62fcc495e2d6f87f5f17a05b",
+    "url": "/lixin_ts/dist/img/5.6b23e2ba.jpg"
+  },
+  {
+    "revision": "552c37826240cad47927b3c5d42e370e",
+    "url": "/lixin_ts/dist/img/3.552c3782.jpg"
+  },
+  {
+    "revision": "066ae6f81e84e8627d2f63a2773b29d6",
+    "url": "/lixin_ts/dist/img/1.066ae6f8.jpg"
+  },
+  {
+    "revision": "f316bb179e033322c7270aac539156f2",
+    "url": "/lixin_ts/dist/img/2.f316bb17.jpg"
+  },
+  {
+    "revision": "113058589913320f7cf731d251205e53",
+    "url": "/lixin_ts/dist/img/bg.11305858.png"
+  },
+  {
+    "revision": "cfc6abb6794bdfd7d9b6c4d9c95d9667",
+    "url": "/lixin_ts/dist/img/logo.cfc6abb6.png"
+  },
+  {
+    "revision": "650f85f86005486191bed28b30bf82c6",
     "url": "/lixin_ts/dist/index.html"
   },
   {

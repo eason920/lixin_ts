@@ -15,7 +15,7 @@
         </swiper>
       </div>
       <div class="s10boxc">
-        <div class="aleft arrow" @click="prevBtns10"><</div>
+        <div class="aleft arrow" @click="prevBtns10"><img src="../share/arrow_left.png" /></div>
         <ul v-if="!isMobile" class="s10dot">
           <li
             v-for="item in 5"
@@ -24,7 +24,7 @@
           ></li>
         </ul>
         <p v-else class="s10txt">公設示意圖</p>
-        <div class="aright arrow" @click="nextBtns10">></div>
+        <div class="aright arrow" @click="nextBtns10"><img src="../share/arrow_right.png" /></div>
       </div>
       <div class="wave">
         <!-- <img src="./S6/wwave.svg" /> -->
@@ -318,6 +318,8 @@ export default {
   justify-content: center
   align-items: center
   cursor: pointer
+  img
+    width: 50%
 
 .s10txt
   font-size: 15px
@@ -337,7 +339,7 @@ export default {
 // wave
 .s10boxp, .s10boxc
   position: relative
-  z-index: 99
+  z-index: 97
 .wave
   bottom: -8vw
 .st0

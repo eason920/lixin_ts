@@ -3,6 +3,7 @@
     <!-- <Loading :loading="load" /> -->
     <SideNavigation v-if="isSide" />
     <Navigation v-if="!isMobile" />
+    <MClose v-else />
     <vue-lazy-component class="section" id="section1" @init="init">
       <S1 />
     </vue-lazy-component>
@@ -48,6 +49,7 @@ import { isMobile } from '@/utils'
 import SideNavigation from '@/layouts/SideNavigation.vue'
 import ContactSection from '@/layouts/ContactSection.vue'
 import MobileNav from '@/layouts/MobileNav.vue'
+import MClose from '@/projects/ts/MClose.vue'
 // import Loading from '@/components/Loading.vue'
 import S1 from '@/projects/ts/S1.vue'
 import S2 from '@/projects/ts/S2.vue'
@@ -68,6 +70,7 @@ export default {
     SideNavigation,
     ContactSection,
     MobileNav,
+    MClose,
     S1,
     S2,
     S3,

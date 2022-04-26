@@ -8,10 +8,19 @@
         <img src="@/assets/img/menu-btn.png" alt />
       </div>
       <div :class="`mask ${isOpen ? 'open' : ''}`" @click="toggleSidebar" />
-      <ul :class="`navlist ${isOpen ? 'open': ''}`">
+      <ul :class="`navlist ${isOpen ? 'open' : ''}`">
         <li
           :key="item.name"
-          v-scroll-to="{ element: `#${item.section}`, offset: isMobile ? (item.mobileOffset ? item.mobileOffset : offset) : (item.offset ? item.offset : offset) }"
+          v-scroll-to="{
+            element: `#${item.section}`,
+            offset: isMobile
+              ? item.mobileOffset
+                ? item.mobileOffset
+                : offset
+              : item.offset
+              ? item.offset
+              : offset
+          }"
           v-for="item in list"
           class="flex-ac"
           @click="toggleSidebar"
@@ -19,8 +28,8 @@
           <span class="link">
             <img v-if="item.imgSrc" :src="item.imgSrc" alt />
             <span>
-              <p class="title">{{item.name}}</p>
-              <span class="subTitle">{{item.subTitle}}</span>
+              <p class="title">{{ item.name }}</p>
+              <span class="subTitle">{{ item.subTitle }}</span>
             </span>
           </span>
         </li>
@@ -43,20 +52,20 @@ export default {
       isMobile,
       isTablet,
       list: navList,
-      isShowMenu: false,
+      isShowMenu: false
     }
   },
 
   computed: {
     offset() {
       return 0
-    },
+    }
   },
 
   methods: {
     toggleSidebar() {
       this.isOpen = !this.isOpen
-    },
+    }
   },
 
   watch: {
@@ -94,7 +103,7 @@ export default {
   position: static;
   height: $nav_phone_height;
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   z-index: 110;
 
   &.show {
@@ -111,13 +120,13 @@ export default {
   top: calc(100vh * 60 / 1080);
   left: 0px;
   width: 140px;
-  height:70px;
+  height: 70px;
   transition: all 0.5s;
   cursor: pointer;
   z-index: 120;
   &.open {
-  width: 180px;
-  height:480px;
+    width: 180px;
+    height: 480px;
   }
 }
 
@@ -127,18 +136,18 @@ export default {
   top: calc(100vh * 60 / 1080);
   left: 0px;
   width: 140px;
-  height:auto;
+  height: auto;
   cursor: pointer;
-  z-index:140;
+  z-index: 140;
   transition: all 0.5s;
 
   &.open {
-  width: 180px;
+    width: 180px;
   }
   img {
-    width:auto;
+    width: auto;
     height: 57px;
-    margin: 5% auto 5%  auto;
+    margin: 5% auto 5% auto;
   }
 
   .close {
@@ -164,7 +173,7 @@ export default {
 
 .navlist {
   position: fixed;
-  z-index:140;
+  z-index: 140;
   //background: $nav_bg;
   width: 0%;
   left: 0;
@@ -275,7 +284,7 @@ export default {
     display: block;
     width: 100vw;
     opacity: 1;
-  z-index: 110;
+    z-index: 110;
   }
 }
 
@@ -337,7 +346,7 @@ export default {
   .menu {
     display: block;
     position: fixed;
-    height:auto;
+    height: auto;
 
     svg {
       color: $nav_btn_color;
@@ -348,7 +357,7 @@ export default {
     position: fixed;
     width: 0%;
     // right: 0;
-    top:130px;
+    top: 130px;
     // height: calc(100vh - #{$nav_phone_height});
     text-align: center;
     transition: all 0.3s ease-in;
@@ -409,7 +418,7 @@ export default {
       display: block;
       width: 100vw;
       opacity: 1;
-      z-index:110;
+      z-index: 110;
     }
   }
 }

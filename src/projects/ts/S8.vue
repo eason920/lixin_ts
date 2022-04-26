@@ -231,7 +231,7 @@ export default {
   flex-direction: column
   align-items: center
   position: relative
-  z-index: 999
+  z-index: 10
   color: #fff
 
   span
@@ -377,7 +377,7 @@ $mw: 22vw
   display: flex
   left: 50%
   transform: translateX(-50%)
-  z-index: 9999
+  z-index: 11
   li
     outline: none
     display: flex

@@ -4,20 +4,28 @@
       <font-awesome-icon icon="phone" />
       <div class="label">撥打電話</div>
     </a>
-
-    <a class="nav-item" v-scroll-to="{ element: `#contact`, offset: 0 }">
-      <font-awesome-icon icon="pen" />
-      <div class="label">預約賞屋</div>
-    </a>
     <a class="nav-item" @click="showMessengerDialog">
       <font-awesome-icon :icon="['fab', 'facebook-messenger']" />
       <div class="label">FB諮詢</div>
+    </a>
+    <a
+      class="nav-item"
+      v-scroll-to="{ element: `#contact`, offset: 0 }"
+      @click="fn"
+    >
+      <font-awesome-icon icon="pen" />
+      <div class="label">預約賞屋</div>
     </a>
     <a class="nav-item" @click="showMapDialog">
       <font-awesome-icon icon="map-marker-alt" />
       <div class="label">地圖導航</div>
     </a>
-    <el-dialog title :visible.sync="isShowCallDialog" width="90%" :modal-append-to-body="false">
+    <el-dialog
+      title
+      :visible.sync="isShowCallDialog"
+      width="90%"
+      :modal-append-to-body="false"
+    >
       <CallDialog :phone="info.phone" />
     </el-dialog>
     <el-dialog
@@ -28,7 +36,12 @@
     >
       <MessengerDialog :messenger="info.fbMessage" />
     </el-dialog>
-    <el-dialog title :visible.sync="isShowMapDialog" width="90%" :modal-append-to-body="false">
+    <el-dialog
+      title
+      :visible.sync="isShowMapDialog"
+      width="90%"
+      :modal-append-to-body="false"
+    >
       <MapDialog :link="info.googleLink" :address="info.address" />
     </el-dialog>
   </div>
@@ -40,13 +53,14 @@ import CallDialog from '@/components/Dialog/Call'
 import MessengerDialog from '@/components/Dialog/Messenger'
 import MapDialog from '@/components/Dialog/Map'
 import info from '@/info'
+// import { log } from 'console'
 
 export default {
   name: 'mobileNav',
   components: {
     CallDialog,
     MessengerDialog,
-    MapDialog,
+    MapDialog
   },
   data() {
     return {
@@ -57,7 +71,7 @@ export default {
       isBottom: false,
       isShowCallDialog: false,
       isShowMessengerDialog: false,
-      isShowMapDialog: false,
+      isShowMapDialog: false
     }
   },
   computed: {
@@ -71,7 +85,7 @@ export default {
       }
 
       return 0
-    },
+    }
   },
   methods: {
     showCallDialog() {
@@ -84,7 +98,11 @@ export default {
     showMapDialog() {
       this.isShowMapDialog = true
     },
-  },
+
+    fn() {
+      console.log('got')
+    }
+  }
 }
 </script>
 
@@ -94,15 +112,15 @@ export default {
 .mobile-nav {
   width: 100%;
   height: 63px;
-  background: #d1b373;
+  background: #9a0000;
 
   display: flex;
   position: fixed;
   bottom: 0;
-  z-index: 100;
-  box-shadow: 0 -2px 5px 0 rgba(0,0,0,.4);
+  z-index: 98;
+  box-shadow: 0 -2px 5px 0 rgba(0, 0, 0, 0.4);
   display: none;
-  transition: all .5s;
+  transition: all 0.5s;
 
   .nav-item {
     flex: 1;
