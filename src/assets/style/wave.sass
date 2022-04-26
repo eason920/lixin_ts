@@ -1,0 +1,31 @@
+.wave
+  width: 200%
+  position: absolute
+  left: 0
+  bottom: 0
+  z-index: 10
+  svg
+    display: block
+    // height: 100%
+    width: 100%
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite
+  &.no-ani
+    svg
+      animation: none
+  &.up
+    bottom: auto
+    top: -1px
+.waveColorWhite
+  fill: #fff
+.waveColorGray
+  fill: #F2F2F2
+.waveOrange
+  fill: #E95513
+
+@keyframes move-forever
+  0%
+    transform: translate3d(-50%,0,0)
+  50%
+    transform: translateZ(0)
+  to
+    transform: translate3d(-50%,0,0)

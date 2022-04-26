@@ -1,0 +1,12 @@
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1700 360" style="enable-background:new 0 0 1700 360;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Background_00000134238645198909741730000014252396130775589005_);}
+</style>
+<linearGradient id="Background_00000072963187350370406180000016455295041147087744_" gradientUnits="userSpaceOnUse" x1="850" y1="360" x2="850" y2="-9.094947e-13">
+	<stop  offset="0.1863" style="stop-color:#E95513"/>
+	<stop  offset="1" style="stop-color:#E95513;stop-opacity:0"/>
+</linearGradient>
+<path id="Background_00000073684196276930211830000003937701023396488120_" style="fill:url(#Background_00000072963187350370406180000016455295041147087744_);" d="
+	M1700,360c-371.3,0-420.7-68-750.6-68S403.4,360,0,360V0h1700V360z"/>
+</svg>

@@ -1,0 +1,207 @@
+<template>
+  <div class="relative">
+    <section id="sec9">
+      <div class="s9boxt">
+        <div class="s9t">東方哲學 西方思想</div>
+        <div class="s9s">十邑設計-富貴牡丹、新東方</div>
+        <div class="s9p">
+          攜手豪宅美學巨擘-十邑設計，鑄就精品飯店生活，規劃中西交融設計概念。事業成功、家庭圓滿、生活精彩，才是真正的成功人生！因應回家社交、回家休閒趨勢，除了居住，更要享受，進門就像在飯店Villa度假，重新發現「家」的奧妙。
+        </div>
+      </div>
+      <div class="s9boxp">
+        <div class="s9pic">
+          <img src="./9/1.jpg" />
+        </div>
+      </div>
+      <div
+        class="s9tree"
+        data-aos-once="true"
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-delay="0"
+      >
+        <img src="./all/tree.png" class="treeAni" />
+      </div>
+      <div class="s9moon">
+        <img src="./all/logobg.png" class="moon" />
+        <img src="./all/bird1.png" class="bird" />
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import { isMobile, isTablet } from '@/utils'
+
+export default {
+  name: 'section1',
+
+  data() {
+    return {
+      isMobile,
+      isTablet
+    }
+  },
+
+  methods: {},
+
+  created() {},
+
+  mounted() {},
+
+  computed: {}
+}
+</script>
+
+<style lang="sass" scoped>
+@import "src/assets/style/myvar"
+// --------------------------------
+// STRUC
+#sec9
+
+@media screen and (min-width: $bp-pc)
+  #sec9
+    padding: 7vw 9vw 13vw
+    display: flex
+    justify-content: space-between
+@media screen and (max-width: $bp-mb)
+  #sec9
+    padding: 16vw 0 20vw
+// --------------------------------
+// BOX TXT
+.s9t
+  @include liinCircle
+  width: 100%
+  position: relative
+  &:before
+    right: 0
+    top: 5px
+  &:after
+    height: 1px
+    top: 7px
+    right: 0
+    left: 150px
+
+.s9boxt
+  display: flex
+  align-items: flex-start
+  text-align: left
+  flex-direction: column
+  color: #fff
+
+@media screen and (min-width: $bp-pc)
+  .s9boxt
+    width: 28vw
+    padding-top: 12vw
+
+  .s9t
+    font-size: 15px
+
+  .s9s
+    font-size: 2vw
+    padding: 1.5vw 0 2.5vw
+
+  .s9p
+    width: 84%
+    font-size: 18px
+    line-height: 1.7
+
+@media screen and (max-width: $bp-mb)
+  .s9boxt
+    padding: 0 8vw 8vw
+
+  .s9t
+    font-size: 15px
+
+  .s9s
+    font-size: 6vw
+    padding: 4vw 0 7vw
+
+  .s9p
+    font-size: 15px
+    line-height: 1.7
+
+// --------------------------------
+// BOX PIC
+.s9boxp
+
+.s9pic
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background: #fff
+    opacity: .2
+  img
+    position: relative
+    z-index: 1
+    width: 100%
+
+@media screen and (min-width: $bp-pc)
+  .s9boxp
+    padding-right: 14vw
+  .s9pic
+    width: 30vw
+    &:before
+      top: 4vw
+      left: 3vw
+      border-radius: 15vw
+    img
+      border-radius: 15vw
+
+@media screen and (max-width: $bp-mb)
+  .s9boxp
+    padding-left: 8vw
+  .s9pic
+    width: 62vw
+    &:before
+      top: 4vw
+      left: 3vw
+      border-radius: 31vw
+    img
+      border-radius: 31vw
+
+// --------------------------------
+// tree
+.s9tree
+  position: absolute
+  z-index: 3
+  right: 0
+  img
+    width: 100%
+
+@media screen and (min-width: $bp-pc)
+  .s9tree
+    width: 32vw
+    bottom: 3vh
+@media screen and (max-width: $bp-mb)
+  .s9tree
+    width: 60vw
+    bottom: 2vh
+
+// --------------------------------
+// MOON
+.s9moon,
+.bird
+  position: absolute
+  position: absolute
+
+.moon
+  width: 100%
+.bird
+  width: 50%
+  top: 0
+  right: 0
+@media screen and (min-width: $bp-pc)
+  .s9moon
+    width: 9vw
+    right: 13vw
+    bottom: 20vw
+@media screen and (max-width: $bp-mb)
+  .s9moon
+    width: 23vw
+    right: 6vw
+    bottom: 35vw
+</style>
