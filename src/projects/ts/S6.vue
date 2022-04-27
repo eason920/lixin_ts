@@ -2,11 +2,36 @@
   <div class="relative">
     <section id="sec6">
       <div class="s6boxt">
-        <img src="./all/logobg.png" class="moon" />
+        <img
+          src="./all/logobg.png"
+          class="moon"
+          data-aos="zoom-in"
+          data-aos-duration="4800"
+          data-aos-once="false"
+        />
         <div class="s6deco">
-          <div class="s6t">地質改良 磐石工法</div>
-          <div class="s6s">穩扎地心，深入大地</div>
-          <div class="s6p">
+          <div
+            class="s6t transorileft"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
+            地質改良 磐石工法
+          </div>
+          <div
+            class="s6s transorileft"
+            data-aos="zoom-in"
+            data-aos-duration="1200"
+            data-aos-once="false"
+          >
+            穩扎地心，深入大地
+          </div>
+          <div
+            class="s6p transorileft"
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+            data-aos-once="false"
+          >
             地下層採逆打工法，連續壁達36.5米深，逆打鋼柱基樁就深插至48.7米，相當於一半的地上層深，搭配高壓灌注地質改良，與土層穩扎結合，固化成堅硬柱體，和原地層形成複合作用，提升地盤強度。
           </div>
         </div>

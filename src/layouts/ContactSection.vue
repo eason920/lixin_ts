@@ -7,7 +7,8 @@
 <style lang="sass" scoped>
 @import "src/assets/style/myvar"
 #contact
-  background: #fff
+  background:
+    image: url(~@/projects/ts/all/bgw.jpg)
 @media screen and (min-width: $bp-pc)
   #contact
     padding-top: 200px

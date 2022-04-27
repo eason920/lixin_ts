@@ -3,22 +3,82 @@
     <section id="sec7">
       <div class="s7box1">
         <div class="s7b1l">
-          <div class="s7t">鋼柱結構 制震地標</div>
-          <div class="s7s">結構同步101 超越SRC</div>
-          <div class="s7p">
+          <div
+            class="s7t"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
+            鋼柱結構 制震地標
+          </div>
+          <div
+            class="s7s"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
+            結構同步101 超越SRC
+          </div>
+          <div
+            class="s7p"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          >
             採用101、宏盛帝寶等級CFT鋼柱，採高雄中鋼高拉力鋼板，柱內由下往上以高壓灌漿混凝土入鋼柱；超越宏盛帝寶7000磅高強度混凝土。
           </div>
           <ul class="s7u">
-            <li>高強度耐火性能</li>
-            <li>剛度提高，地震和風作用下比傳統SRC不易變形</li>
-            <li>提高混凝土強度，柱截面變小，使室內空間增大</li>
-            <li>具有穩定的滯回性能，使建築的抗震性能大幅度提高</li>
+            <li
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-once="false"
+            >
+              高強度耐火性能
+            </li>
+            <li
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-once="false"
+            >
+              剛度提高，地震和風作用下比傳統SRC不易變形
+            </li>
+            <li
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-once="false"
+            >
+              提高混凝土強度，柱截面變小，使室內空間增大
+            </li>
+            <li
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-once="false"
+            >
+              具有穩定的滯回性能，使建築的抗震性能大幅度提高
+            </li>
           </ul>
         </div>
         <div class="s7b1r">
-          <img src="./7/src.png" />
-          <img v-if="!isMobile" src="./7/cft.png" />
-          <img v-else src="./7/cft_m.png" />
+          <img
+            src="./7/src.png"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          />
+          <img
+            v-if="!isMobile"
+            src="./7/cft.png"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          />
+          <img
+            v-else
+            src="./7/cft_m.png"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          />
         </div>
       </div>
       <div class="s7box2">
@@ -31,18 +91,27 @@
         >
           <img src="./all/tree.png" class="treeAni" />
         </div>
-        <img v-if="!isMobile" src="./7/img2.png" />
-        <img v-else src="./7/img2m.png" />
+        <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
+          <img v-if="!isMobile" src="./7/img2.png" />
+          <img v-else src="./7/img2m.png" />
+        </div>
       </div>
       <div class="s7box3">
         <div class="s7b3t">
-          <span>494組制震系統 制震超越6級</span>
-          <p>
+          <span data-aos="zoom-in" data-aos-duration="800" data-aos-once="false"
+            >494組制震系統 制震超越6級</span
+          >
+          <p data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
             發生4級以上地震，大樓會呈現8字型的搖擺，本案採用日本進口特殊鋼材制震器，非傳統油壓式制震，避免將來漏油的風險，總樓高25樓，最高裝至22樓，充份地發揮鋼構件的優異韌性來吸收地震能量。最高規格的安全守護，打造建築地標。
           </p>
         </div>
         <div class="s7b3b">
-          <img src="./7/img3.jpg" />
+          <img
+            src="./7/img3.jpg"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            data-aos-once="false"
+          />
         </div>
       </div>
       <div class="wave">
@@ -259,7 +328,7 @@ export default {
 // BOX3
 @media screen and (min-width: $bp-pc)
   .s7box3
-    padding: 5vw 5vw 0
+    padding: 10vw 5vw 0
 
   .s7b3t
     text-align: left
@@ -309,7 +378,7 @@ export default {
   background:
     image: url(./7/bg.png)
     size: 90%
-    position: right 96.5%
+    position: right 98%
     repeat: no-repeat
   padding:
     top: 5vw
@@ -327,11 +396,11 @@ export default {
 // wave
 .wave
   svg
-    animation: none
-    transform: translate(-5%, 20%)
+    // animation: none
+    // transform: translate(-5%, 20%)
 
 @media screen and (max-width: $bp-mb)
   .wave
     svg
-      transform: translate(-5%, 8%)
+      // transform: translate(-5%, 8%)
 </style>

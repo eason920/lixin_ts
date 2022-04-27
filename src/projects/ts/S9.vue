@@ -2,9 +2,28 @@
   <div class="relative">
     <section id="sec9">
       <div class="s9boxt">
-        <div class="s9t">東方哲學 西方思想</div>
-        <div class="s9s">十邑設計-富貴牡丹、新東方</div>
-        <div class="s9p">
+        <div
+          class="s9t"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-once="false"
+        >
+          東方哲學 西方思想
+        </div>
+        <div
+          class="s9s"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-once="false"
+        >
+          十邑設計-富貴牡丹、新東方
+        </div>
+        <div
+          class="s9p transorileftTop"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-once="false"
+        >
           攜手豪宅美學巨擘-十邑設計，鑄就精品飯店生活，規劃中西交融設計概念。事業成功、家庭圓滿、生活精彩，才是真正的成功人生！因應回家社交、回家休閒趨勢，除了居住，更要享受，進門就像在飯店Villa度假，重新發現「家」的奧妙。
         </div>
       </div>
@@ -18,13 +37,25 @@
         data-aos-once="true"
         data-aos="fade-left"
         data-aos-duration="800"
-        data-aos-delay="0"
+        data-aos-delay="1600"
       >
         <img src="./all/tree.png" class="treeAni" />
       </div>
       <div class="s9moon">
-        <img src="./all/logobg.png" class="moon" />
-        <img src="./all/bird1.png" class="bird" />
+        <img
+          src="./all/logobg.png"
+          class="moon"
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          data-aos-once="false"
+        />
+        <img
+          src="./all/bird1.png"
+          class="bird"
+          data-aos="zoom-in"
+          data-aos-duration="2400"
+          data-aos-once="false"
+        />
       </div>
     </section>
   </div>

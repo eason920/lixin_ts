@@ -80,10 +80,10 @@
     width: 320px !important;
     height: 72px !important;
     // opacity: 0 !important;
-    border-radius: 20px !important;
+    border-radius: 5px !important;
     font-size: 28px !important;
     background-position: center !important;
-    background-color: #d1b373!important;
+    background-color: #e95513!important;
     background-image: $order_submit_bg;
     margin: 0 auto !important;
     margin-top: 20px !important;
@@ -94,7 +94,7 @@
     font-family: $family3;
 
     &.is-disabled {
-        background-color: #d1b373!important;
+        background-color: #e95513!important;
         opacity: 0.6;
     }
 

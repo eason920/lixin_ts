@@ -45,8 +45,8 @@
                 }"
               ></el-time-select>
             </div> -->
-            <!-- <div class="row">
-              <label>想看房型</label>
+            <div class="row">
+              <label>需求房型</label>
               <el-select v-model="form.house" placeholder>
                 <el-option
                   v-for="city in ['甜蜜2房', '幸福3房', '都想看看']"
@@ -56,7 +56,7 @@
                   no-data-text=""
                 ></el-option>
               </el-select>
-            </div> -->
+            </div>
             <!-- <div class="row">
               <label>E-mail</label>
               <el-input v-model="form.email" placeholder></el-input>
@@ -101,7 +101,7 @@
           <el-checkbox v-model="checked">
             <h3>
               本人知悉並同意
-              <span @click="showPolicyDialog">「個資告知事項聲明」</span>
+              <span @click="showPolicyDialog" class="deco1">「個資告知事項聲明」</span>
               內容
             </h3>
           </el-checkbox>
@@ -270,6 +270,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/style/variableColor.scss';
+$orange: #e95513;
 .bg-img {
   width: 100vw;
   position: absolute;
@@ -303,7 +304,7 @@ export default {
     position: relative;
     overflow: hidden;
     .title {
-      color: #d1b373;
+      color: $orange;
       font-size: 48px;
     }
   }
@@ -352,7 +353,7 @@ export default {
   }
 
   .group {
-    height: 285px;
+    height: 360px;
     margin-bottom: 40px;
 
     &:nth-child(1) {
@@ -377,7 +378,8 @@ export default {
     margin-bottom: 15px;
     border: solid 1px #000;
     padding: 5px 5px 5px 15px;
-    border-radius: 15px;
+    border-radius: 0;
+    background: #fff;
 
     &.house {
       margin-top: 50px;
@@ -500,5 +502,11 @@ export default {
       color: #ffffff;
     }
   }
+}
+
+// ----------------------------
+.deco1{
+  color: red!important;
+  text-decoration: none;
 }
 </style>

@@ -2,9 +2,31 @@
   <div class="relative">
     <section id="sec5">
       <div class="s5boxt">
-        <div class="s5t">至高尊榮 崗石城堡</div>
-        <div class="s5s">拔高103米、擎天雄姿樓群</div>
-        <div class="s5p">
+        <div
+          class="s5t"
+          data-aos="zoom-in transorileft"
+          data-aos-duration="800"
+          data-aos-delay="0"
+          data-aos-once="false"
+        >
+          至高尊榮 崗石城堡
+        </div>
+        <div
+          class="s5s transorileft"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+          data-aos-delay="0"
+          data-aos-once="false"
+        >
+          拔高103米、擎天雄姿樓群
+        </div>
+        <div
+          class="s5p transorileft"
+          data-aos="zoom-in"
+          data-aos-duration="1800"
+          data-aos-delay="0"
+          data-aos-once="false"
+        >
           大度領受世人仰望的視角，氣勢磅礡，已然改寫了新莊最精華地段的天際線，崗石鑄造，承襲王族大統從此獨占層峰版圖最醒目的位置。
         </div>
         <ul class="s5dot">

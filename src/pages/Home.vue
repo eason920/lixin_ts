@@ -1,6 +1,6 @@
 <template>
   <div class="home no-padding-top">
-    <!-- <Loading :loading="load" /> -->
+    <Loading :loading="load" />
     <SideNavigation v-if="isSide" />
     <Navigation v-if="!isMobile" />
     <MClose v-else />
@@ -50,7 +50,7 @@ import SideNavigation from '@/layouts/SideNavigation.vue'
 import ContactSection from '@/layouts/ContactSection.vue'
 import MobileNav from '@/layouts/MobileNav.vue'
 import MClose from '@/projects/ts/MClose.vue'
-// import Loading from '@/components/Loading.vue'
+import Loading from '@/components/Loading.vue'
 import S1 from '@/projects/ts/S1.vue'
 import S2 from '@/projects/ts/S2.vue'
 import S3 from '@/projects/ts/S3.vue'
@@ -65,7 +65,7 @@ import S10 from '@/projects/ts/S10.vue'
 export default {
   name: 'home',
   components: {
-    // Loading,
+    Loading,
     Navigation,
     SideNavigation,
     ContactSection,
@@ -150,6 +150,13 @@ section
   user-select: none
 //   overflow: hidden
 //   position: relative
+//-- ----------------------------
+// AOS
+.transorileft
+  transform-origin: 0 50%
+
+.transorileftTop
+  transform-origin: 0
 </style>
 
 <style lang="scss">

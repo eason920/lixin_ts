@@ -2,8 +2,10 @@
   <div class="relative">
     <section id="sec8">
       <div class="s8boxt">
-        <span>稀珍挑高4.2米 精品宅</span>
-        <p>
+        <span data-aos="fade-up" data-aos-duration="800" data-aos-once="false"
+          >稀珍挑高4.2米 精品宅</span
+        >
+        <p data-aos="fade-up" data-aos-duration="1600" data-aos-once="false">
           城市核心稀珍挑高4.2米精品宅，走外樑外柱、淨空間規劃，四面採光，舒適宜居的人性化尺度布局，生活有餘裕、時尚即日常，享樂型優質資產。
         </p>
       </div>
@@ -82,7 +84,7 @@ export default {
           el: '.swiper-pagination',
           clickable: true,
           type: 'bullets'
-        },
+        }
       }
     }
   },
@@ -135,6 +137,7 @@ export default {
 // 上下頁
 .swiper-button-prev,
 .swiper-button-next
+  -webkit-tap-highlight-color: transparent
   width: 50px
   height: 80px
   &:after
@@ -183,6 +186,21 @@ export default {
     background-image: url('./8/8.jpg')
 
 // 總高
+.swiper-container
+  &:before, &:after
+    content: ""
+    position: absolute
+    top: 0
+    width: 10vw
+    height: 100%
+    z-index: 9
+  &:before
+    background-image: linear-gradient(to left, rgba(255,255,255, 0), #fff)
+    left: 0
+  &:after
+    background-image: linear-gradient(to right, rgba(255,255,255, 0), #fff)
+    right: 0
+
 .swiper-container, // height 1
 .swiper-wrapper,
 .swiper-slide,

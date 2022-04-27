@@ -11,18 +11,23 @@
       </div>
       <div class="s3msg">
         <div class="s3tbox">
-          <div class="s3t">市心之城<b></b><p></p></div>
+          <div class="s3t">
+            市心之城<b></b>
+            <p></p>
+          </div>
           <div class="s3s">中正路、新泰路交匯3000坪基地</div>
         </div>
         <div class="s3p">
           坐落新莊最熱鬧的繁華雙大道，地段價值湧現，優勢的總價帶，北市上班，下班住最安全的新房子，坐享大都市咫尺繁華，更奢侈悠遊於超凡格局，北台灣最優越CP值地段，戶戶珍稀，席席爭藏。
         </div>
       </div>
-      <!-- <img
-        class="finger"
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABJCAYAAACuPXHDAAAACXBIWXMAABYlAAAWJQFJUiTwAAAErElEQVR4nO2cv3LTQBDGvzCpGGbkki4u6G2eIE5FGfMEVloazBMQnoA00OI8AaGkQn4ClCdAfgLkGUpmjrnMKuxsJFmK7p9kfzOa2JYs636629vdW+VIKYUWiunQVZsv9VCt23ncEuIXep0BSAYKccbaicYwdY9ssMXqv1YNv9PnbcXaGzdpxwFi9dYK5gGiIZi+Ic6UUkvapn2G6QviXCmVqYfKCG7vYPqAGJcAlJr3DaZriOMSaIlSKhWf5UqpUZ9guoSotysBi9vFmYC5DBBkJczCIX8D4BO9/k5O6KyjY1vmsE/Z60sAqTj+GsCC3uvfv6o4x6jjtXWRZvMcwCty3J8C+FxQlkPLhMruZsLOWzap8FGRNDhHCEp5j/xNf/8CuAXwx9PdzhockzY4xraeAZhQiH3HrgD5moaW3vmChlUIF1ympeffnxKrY+p0mh2e0M6c4OkdER04rT/fXqqAGBGrGbG7B3mAuVuVECFA4gCzUrUQUQISB5gPtBMiKkDiAPNejSCiBiQOMJtDxA6Q2GOYrSCiAUjsIczWENFi8auAWcTPTSKQvipj7WsEsQ1IDhNNT95TPaqdbUAOHSBX63a2BelSp9SglK2j34R6M5tMNj4VEdAF5f4yymMGp9BBSmmw70MsmQkZpHY9zgBcUOZ8y/bpHqrYltGwj2vOZ1Uhg8zJLq4I0JjglukEwDkb/nPXFxvyZCOVE6BfO47TUL8CeMeS05lt37dPIEEwNgQLNPQzikbmbOFM62PJ97+RCTBuY/s22aCkZ3H7+FLYUqli+KdkKoypjyDrlIretq0AO6FjjS3rDg0kqHcWKmAd0SLVmu2LKtbNHyXTIMcUp84CzBDd0HV9YJ8tTPVKUyBH5KroGfUHbT/Jfnnz7Sp0KYa7kRtuAqSGmFEoJ3VCxj3xXGYiZXzN3gRIbWci9n5T4jifCts1OHX1I0fCd7tmQ3lMM2jRU8t6rFRCE0OduhZ3WVHXHsnty1bYw4wafR1IW63KZGRTlSeMCfjEUZty5uY4q1/qCpJHGSdiXYdrSTO5C6U+hn/XoZ0JJ/emwp1IKM4drEzM2jxjXbdcO+jnF02A1OAu2PuIoEm/cajPLt7JVGSzovxfoUmJE57vyMy4VBNXrJVMxtpXwtWZlAznIoFwFFAPNbIqaTppEQuY5yYzLIYkTY4RF8lGGi0WM/lbH2soNbKSlbKVj5xTzF1oZToj3UH8OtamTmoLZC56YRSQ+8NBGqvasJkhT8VMfhrAox0QUY+xELLtPwd5jBLmbmzJRvksC8xZ2u/MlPfgYs0mZv5j5Ll2Zyxyp8ZuqAuQmXCBFh7Xc/iw3vQNJKgXbsR7H+IgjQYELpdjObxzT+7QIECuPPfKKSt1QZ9BQthK19EOXwa5Ne05uAbJnfLIMUz+W70vospFptwVyLkY1saXhn3U/vBGuARZaG0jIPANMnLkU1od1vAEMheVGLZBzkQ0Y6Xiw1dZH08WuABZaG3rOR1fILmNcgnS2vKGL5C8Qbar1PiNGhxILpulLDLbY62EJQQbaVM8nt/YfI7R1+MhskHWs8u2k8lDLMavktWnavcJpD1zAuAfMiguMm+CB/8AAAAASUVORK5CYII="
-        lazy="loaded"
-      /> -->
+      <div id="fingerbox" @click="fnFingerFadeOut">
+        <img
+          class="finger"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABJCAYAAACuPXHDAAAACXBIWXMAABYlAAAWJQFJUiTwAAAErElEQVR4nO2cv3LTQBDGvzCpGGbkki4u6G2eIE5FGfMEVloazBMQnoA00OI8AaGkQn4ClCdAfgLkGUpmjrnMKuxsJFmK7p9kfzOa2JYs636629vdW+VIKYUWiunQVZsv9VCt23ncEuIXep0BSAYKccbaicYwdY9ssMXqv1YNv9PnbcXaGzdpxwFi9dYK5gGiIZi+Ic6UUkvapn2G6QviXCmVqYfKCG7vYPqAGJcAlJr3DaZriOMSaIlSKhWf5UqpUZ9guoSotysBi9vFmYC5DBBkJczCIX8D4BO9/k5O6KyjY1vmsE/Z60sAqTj+GsCC3uvfv6o4x6jjtXWRZvMcwCty3J8C+FxQlkPLhMruZsLOWzap8FGRNDhHCEp5j/xNf/8CuAXwx9PdzhockzY4xraeAZhQiH3HrgD5moaW3vmChlUIF1ympeffnxKrY+p0mh2e0M6c4OkdER04rT/fXqqAGBGrGbG7B3mAuVuVECFA4gCzUrUQUQISB5gPtBMiKkDiAPNejSCiBiQOMJtDxA6Q2GOYrSCiAUjsIczWENFi8auAWcTPTSKQvipj7WsEsQ1IDhNNT95TPaqdbUAOHSBX63a2BelSp9SglK2j34R6M5tMNj4VEdAF5f4yymMGp9BBSmmw70MsmQkZpHY9zgBcUOZ8y/bpHqrYltGwj2vOZ1Uhg8zJLq4I0JjglukEwDkb/nPXFxvyZCOVE6BfO47TUL8CeMeS05lt37dPIEEwNgQLNPQzikbmbOFM62PJ97+RCTBuY/s22aCkZ3H7+FLYUqli+KdkKoypjyDrlIretq0AO6FjjS3rDg0kqHcWKmAd0SLVmu2LKtbNHyXTIMcUp84CzBDd0HV9YJ8tTPVKUyBH5KroGfUHbT/Jfnnz7Sp0KYa7kRtuAqSGmFEoJ3VCxj3xXGYiZXzN3gRIbWci9n5T4jifCts1OHX1I0fCd7tmQ3lMM2jRU8t6rFRCE0OduhZ3WVHXHsnty1bYw4wafR1IW63KZGRTlSeMCfjEUZty5uY4q1/qCpJHGSdiXYdrSTO5C6U+hn/XoZ0JJ/emwp1IKM4drEzM2jxjXbdcO+jnF02A1OAu2PuIoEm/cajPLt7JVGSzovxfoUmJE57vyMy4VBNXrJVMxtpXwtWZlAznIoFwFFAPNbIqaTppEQuY5yYzLIYkTY4RF8lGGi0WM/lbH2soNbKSlbKVj5xTzF1oZToj3UH8OtamTmoLZC56YRSQ+8NBGqvasJkhT8VMfhrAox0QUY+xELLtPwd5jBLmbmzJRvksC8xZ2u/MlPfgYs0mZv5j5Ll2Zyxyp8ZuqAuQmXCBFh7Xc/iw3vQNJKgXbsR7H+IgjQYELpdjObxzT+7QIECuPPfKKSt1QZ9BQthK19EOXwa5Ne05uAbJnfLIMUz+W70vospFptwVyLkY1saXhn3U/vBGuARZaG0jIPANMnLkU1od1vAEMheVGLZBzkQ0Y6Xiw1dZH08WuABZaG3rOR1fILmNcgnS2vKGL5C8Qbar1PiNGhxILpulLDLbY62EJQQbaVM8nt/YfI7R1+MhskHWs8u2k8lDLMavktWnavcJpD1zAuAfMiguMm+CB/8AAAAASUVORK5CYII="
+          lazy="loaded"
+        />
+      </div>
     </section>
   </div>
 </template>
@@ -31,24 +36,12 @@
 @import "src/assets/style/myvar"
 #sec3
   // height: 100vh
-
-.finger
-  position: absolute
-  top: 7.8125vw
-  width: 4.2708333333vw
-  animation: move 2s ease-in-out infinite alternate-reverse
-
-@keyframes move
-  0%
-    transform: translateX(0)
-  to
-    transform: translateX(-50%)
-
 .s3box
 
 @media screen and (min-width: $bp-pc)
   $area: 300px
   .s3pic
+    cursor: ew-resize
     background:
       image: url(./3/bg.jpg)
       size: contain
@@ -59,6 +52,7 @@
     // height: 42vw
     width: calc( 100vw + #{$area})
     transform: translateX( calc( #{$area} / 2 * -1 ) )
+    transition: .1s
     &:after
       content: ""
       position: absolute
@@ -164,6 +158,31 @@
       size: 14px
       weight: lighter
     width: 96%
+
+// --------------------------------
+// FINGER BOX
+#fingerbox
+  @include fullScreen
+  background: rgba(0,102,153,.6)
+  cursor: ew-resize
+
+.finger
+  position: absolute
+  animation: move 2s ease-in-out infinite alternate-reverse
+
+@keyframes move
+  0%
+    transform: translateX(0)
+  to
+    transform: translateX(-50%)
+@media screen and (min-width: $bp-pc)
+  .finger
+    top: 26vw
+    width: 4.2708333333vw
+@media screen and (max-width: $bp-mb)
+  .finger
+    top: 70vw
+    width: 20vw
 </style>
 
 <script>
@@ -182,15 +201,15 @@ export default {
   },
 
   methods: {
-    fnMLeft() {}
+    fnFingerFadeOut() {
+      console.log('got')
+      $('#fingerbox').fadeOut()
+    }
   },
 
   created() {},
 
   mounted() {
-    $(window).resize(() => {
-      console.log('resize')
-    })
     if (!isMobile) {
       console.log('=========PC=========')
       const ww = ($(window).width() + 300) * 0.5625
@@ -198,7 +217,7 @@ export default {
       $('.s3pic').css('height', ww)
       let mStart = 0
       $('.s3box').mousedown(e => {
-        if (event.which === 1) {
+        if (e.which === 1) {
           if (mStart === 0) {
             mStart = e.pageX
           }
@@ -206,7 +225,8 @@ export default {
           console.log('ok')
         }
       })
-      $('.s3box').mouseup(event => {
+
+      $('.s3box').mouseup(e => {
         $('.s3box').removeClass('move')
         console.log('up')
       })
@@ -223,8 +243,7 @@ export default {
           default:
         }
         const trans = 'translateX(calc(-150px + ' + move + 'px))'
-        console.log(move, trans)
-        // console.log('e.pageX', e.pageX)
+        // console.log(move, trans)
         $('.s3pic').css('transform', trans)
       })
     } else {

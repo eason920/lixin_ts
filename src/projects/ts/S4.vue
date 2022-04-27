@@ -1,7 +1,13 @@
 <template>
   <div class="relative">
     <section id="sec4">
-      <div class="s4boxp">
+      <div
+        class="s4boxp"
+        data-aos="fade-left"
+        data-aos-duration="1600"
+        data-aos-delay="0"
+        data-aos-once="false"
+      >
         <swiper :options="swiperOptions4" ref="swipers4">
           <swiper-slide v-for="(item, i) in swipList" :key="'s4' + i">
             <div class="s4item">
@@ -21,9 +27,31 @@
       </div>
       <div class="s4boxt">
         <div class="s4deco">
-          <div class="s4t">全方位 核心商圈</div>
-          <div class="s4s">雙陽面交匯、動能軸帶</div>
-          <div class="s4p">
+          <div
+            class="s4t transorileft"
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+            data-aos-delay="100"
+            data-aos-once="false"
+          >
+            全方位 核心商圈
+          </div>
+          <div
+            class="s4s transorileft"
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+            data-aos-delay="200"
+            data-aos-once="false"
+          >
+            雙陽面交匯、動能軸帶
+          </div>
+          <div
+            class="s4p transorileft"
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+            data-aos-delay="300"
+            data-aos-once="false"
+          >
             捷運站290米(步行3~5分鐘)，6.6萬坪運動公園(步行3~4分鐘)，方圓500m內14家金融機構，星巴克、全家超商、7-11、全聯、區公所、郵局、新莊國中小，隨處皆是生活日常風景，處處是驚喜。
           </div>
         </div>
@@ -37,7 +65,13 @@
         </ul>
       </div>
       <!-- deco vv -->
-      <div class="s4moon">
+      <div
+        class="s4moon"
+        data-aos="zoom-in"
+        data-aos-duration="1600"
+        data-aos-delay="0"
+        data-aos-once="false"
+      >
         <div>
           <img src="./all/logobg.png" class="pm" />
           <img src="./all/bird1.png" class="pb" />
@@ -45,9 +79,9 @@
       </div>
       <div
         class="s4tree"
-        data-aos-once="true"
+        data-aos-once="false"
         data-aos="fade-left"
-        data-aos-duration="800"
+        data-aos-duration="1600"
         data-aos-delay="0"
       >
         <img src="./all/tree.png" class="treeAni" />
@@ -94,7 +128,7 @@ export default {
           delay: 1500,
           disableOnInteraction: false // 換頁後是否停止 autoplay
         },
-        speed: 800,
+        speed: 1600,
         grabCursor: true,
         pagination: {
           el: '.swiper-pagination',

@@ -48,7 +48,7 @@ export default {
 @import "@/assets/style/variableColor.scss";
 .house-info {
   width: 100vw;
-  // background: $house_bg;
+  background: $house_bg;
   position: relative;
   z-index: 1;
 }
@@ -59,7 +59,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 
   .decor-6 {
     width: 35vw;
@@ -77,7 +77,7 @@ export default {
   line-height: 36px;
   margin: 60px 0;
   font-weight: 500;
-  color: #d1b373;
+  color: $house_title_color;
   font-family: $family3;
   width: 80vw;
   padding: 10px 20px;
@@ -94,7 +94,7 @@ export default {
   margin-right: 160px;
   width: 260px;
   height: 30px;
-  border-left: 4px solid #d1b373;
+  border-left: 4px solid #fff;
   padding-left: 12px;
   display: flex;
   align-items: center;
@@ -106,7 +106,7 @@ export default {
 
   .label {
     font-size: 16px;
-    color: #d1b373;
+    color: #fff;
     margin-bottom: 0;
     margin-right: 20px;
     white-space: nowrap;

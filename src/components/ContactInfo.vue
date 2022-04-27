@@ -15,7 +15,7 @@
           srcset=""
         />
       </div> -->
-      <img
+      <!-- <img
         v-if="!isMobile"
         class="logo"
         src="@/projects/ts/1/logo.png"
@@ -26,7 +26,12 @@
         class="logo"
         src="@/projects/ts/1/logo.png"
         :alt="info.caseName"
-      />
+      /> -->
+      <div class="MoonBoxOuter">
+        <div class="MoonBox">
+          <LOGO />
+        </div>
+      </div>
       <div class="info">
         <div class="btn flex-c" @click="showCallDialog">
           <span class="flex-c">
@@ -91,12 +96,14 @@ import { isMobile, isTablet } from '@/utils'
 import CallDialog from '@/components/Dialog/Call'
 import MessengerDialog from '@/components/Dialog/Messenger'
 import MapDialog from '@/components/Dialog/Map'
+import LOGO from '@/projects/ts/logo.vue'
 export default {
   name: 'contactInfo',
   components: {
     CallDialog,
     MessengerDialog,
-    MapDialog
+    MapDialog,
+    LOGO
   },
   data() {
     return {
@@ -128,8 +135,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variableColor.scss";
-@import "@/assets/style/variableDefault.scss";
+@import '@/assets/style/variableColor.scss';
+@import '@/assets/style/variableDefault.scss';
 
 .contact-info {
   background: $contact_bg;
@@ -148,8 +155,8 @@ export default {
   background-attachment: fixed;
   background-position: 0% 50%; */
   transform: translateY(0);
-  margin: 2vw auto 2vw;
-  padding: 70px 0 30px;
+  margin: 0 auto 2vw;
+  padding: 50px 0 30px;
 
   .decor-5 {
     width: 22vw;
@@ -185,12 +192,12 @@ export default {
   cursor: pointer;
   text-decoration: none;
   color: #fff;
-  background: #d1b373;
+  background: #e95513;
   // box-shadow: $contact_btn_border;
   transition: all 0.5s;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0;
   font-family: $family4;
 
   &.half {
@@ -213,7 +220,7 @@ export default {
     }
   }
   &::before {
-    content: "";
+    content: '';
     width: 40%;
     height: 100%;
     display: block;
@@ -238,12 +245,12 @@ export default {
   height: 60px;
   background: #fff;
   // box-shadow: $contact_btn_border;
-  border-radius: 10px 0 0 10px;
-  border:1px solid #d1b373;
+  border-radius: 0; // true radius
+  border: 1px solid #e95513;
   font-family: $family4;
   + .google-btn,
   + .btn {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0; // true radius
     font-family: $family4;
   }
 }
@@ -254,9 +261,9 @@ export default {
   cursor: pointer;
   text-decoration: none;
   color: $contact_google_btn_color;
-  background: #d1b373;
+  background: #e95513;
   background-position: center !important;
-  box-shadow: #d1b373;
+  box-shadow: #e95513;
   transition: all 0.5s;
 
   svg {
@@ -267,14 +274,14 @@ export default {
     transition: all 0.5s;
   }
 
-  &:hover {
-    background: $contact_google_hover_btn_bg;
-    color: $contact_google_hover_btn_color;
+  // &:hover {
+  //   background: $contact_google_hover_btn_bg;
+  //   color: $contact_google_hover_btn_color;
 
-    svg {
-      color: $contact_google_hover_btn_icon;
-    }
-  }
+  //   svg {
+  //     color: $contact_google_hover_btn_icon;
+  //   }
+  // }
 }
 
 /* 平板尺寸 */
@@ -349,10 +356,10 @@ export default {
     width: 280px;
     padding: 0 1em;
     text-align: justify;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0;
     + .google-btn,
     + .btn {
-      border-radius: 0 0 10px 10px;
+      border-radius: 0;
     }
   }
 }
@@ -362,4 +369,21 @@ export default {
     font-size: 14px;
   }
 }
+</style>
+
+<style lang="sass" scoped>
+.MoonBoxOuter
+  display: flex
+  justify-content: center
+  margin-bottom: 5vw
+$w: 25vw
+.MoonBox
+  padding: 5% 0 0
+  width: $w
+  height: $w
+  display: flex
+  justify-content: center
+  background:
+    image: url(~@/projects/ts/all/logobg.png)
+    size: cover
 </style>
