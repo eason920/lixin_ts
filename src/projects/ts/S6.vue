@@ -37,11 +37,16 @@
         </div>
       </div>
       <div class="s6boxp">
-        <img src="./6/1.jpg" />
+        <img
+          src="./6/1.jpg"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-once="false"
+        />
       </div>
       <div
         class="s6tree"
-        data-aos-once="true"
+        data-aos-once="false"
         data-aos="fade-left"
         data-aos-duration="800"
         data-aos-delay="0"

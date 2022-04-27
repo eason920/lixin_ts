@@ -350,7 +350,17 @@
 
 <!--SVG ANI-->
 <style lang="scss" scoped>
-@import '@/assets/style/function.scss';
+// @import '@/assets/style/function.scss';
+// svg {
+//   margin: 0;
+// }
+
+// @import 'src/assets/style/myvar';
+// @media screen and (max-width: $bp-mb) {
+//   svg {
+//     margin-top: 15%;
+//   }
+// }
 .l {
   fill: none;
   stroke: #000000;
@@ -509,79 +519,17 @@
     transform: skewY(0);
   }
 }
-.txt {
-  // @include img_c_pc(1100, 620);
-  top: calc(50% + (620 - 540) * 100vw / 1920);
-  font-size: size(34);
-  color: #000;
-  font-weight: 600;
-  line-height: 1.4;
-  z-index: 2;
-  letter-spacing: 0.01em;
-  .title1 {
-    transform: scaleX(5);
-    font-size: 1.4em;
-    span {
-      display: inline-block;
-      width: 2px;
-      height: 0.8em;
-      position: relative;
-      margin: 0 0.4em;
-      background: currentColor;
-    }
-  }
-  .title2 {
-    transform: scaleX(5);
-    letter-spacing: 0.06em;
-    /*
-&::after,
-&::before{content: "";width: 5em;height: 2px;background: currentColor;
-vertical-align: middle;margin: 0 0.4em 0.2em 0.4em;
-display: inline-block;} */
-  }
-}
+
 /* 螢幕尺寸標準 */
 /* 平板尺寸 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 }
 
 @media screen and (max-width: 767px) {
-  .section1 {
-    min-height: sizem(604);
-    max-height: sizem(750);
-    height: calc(100vh - 63px);
-    //  height: sizem(604);
-    &::before {
-      height: sizem(1030);
-      bottom: sizem(1030 * -0.7);
-    }
-  }
-  .bg {
-    width: 150%;
-    left: -25%;
-    top: calc(50% + (365 - 604 * 0.5) * 100vw / 375);
-  }
-  .tree {
-    // @include img_r_m(270, 330, 0);
-    top: calc(70% + (330 - 604 * 0.7) * 100vw / 375);
-  }
-  .b2 {
-    // @include img_l_m(115, 62, 31);
-    top: calc(30% + (62 - 604 * 0.3) * 100vw / 375);
-  }
-  .m {
-    // @include img_c_m(295, 118);
-    top: calc(40% + (118 - 604 * 0.4) * 100vw / 375);
-  }
   .logo {
     // @include img_c_m(256, 175);
     top: calc(40% + (175 - 604 * 0.4) * 100vw / 375);
     z-index: 2;
-  }
-  .txt {
-    // @include img_c_m(370, 300);
-    top: calc(40% + (300 - 604 * 0.4) * 100vw / 375);
-    font-size: sizem(16);
   }
 }
 </style>

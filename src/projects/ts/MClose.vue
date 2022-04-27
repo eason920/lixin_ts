@@ -8,7 +8,7 @@
           :key="item.name"
           v-scroll-to="{
             element: `#${item.section}`,
-            offset: item.offset ? item.offset : offset
+            offset: item.mobileOffset
           }"
           v-for="(item, i) in list"
         >
@@ -112,7 +112,7 @@ body.fixed
   top: 0
   right: 0
   left: auto
-  z-index: 99999
+  z-index: 99
   position: fixed
   width: 45px
   height: 45px

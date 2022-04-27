@@ -28,16 +28,22 @@
         </div>
       </div>
       <div class="s9boxp">
-        <div class="s9pic">
+        <div
+          class="s9pic"
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="0"
+        >
           <img src="./9/1.jpg" />
         </div>
       </div>
       <div
         class="s9tree"
-        data-aos-once="true"
+        data-aos-once="false"
         data-aos="fade-left"
-        data-aos-duration="800"
-        data-aos-delay="1600"
+        data-aos-duration="2000"
+        data-aos-delay="0"
       >
         <img src="./all/tree.png" class="treeAni" />
       </div>
@@ -97,7 +103,7 @@ export default {
     justify-content: space-between
 @media screen and (max-width: $bp-mb)
   #sec9
-    padding: 16vw 0 20vw
+    padding: 16vw 0 35vw
 // --------------------------------
 // BOX TXT
 .s9t
@@ -210,7 +216,7 @@ export default {
 @media screen and (max-width: $bp-mb)
   .s9tree
     width: 60vw
-    bottom: 2vh
+    bottom: 7vh
 
 // --------------------------------
 // MOON
@@ -234,5 +240,5 @@ export default {
   .s9moon
     width: 23vw
     right: 6vw
-    bottom: 35vw
+    bottom: 45vw
 </style>

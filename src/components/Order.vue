@@ -458,7 +458,7 @@ $orange: #e95513;
       font-size: 21px;
     }
     .order {
-      width: 95% !important;
+      width: 86% !important;
       margin: 0 auto;
       padding: 0;
     }
@@ -482,6 +482,7 @@ $orange: #e95513;
       }
       label {
         width: 30% !important;
+        min-width: 80px
       }
     }
 

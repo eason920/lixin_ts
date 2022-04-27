@@ -15,7 +15,7 @@
 
 @media screen and (max-width: $bp-mb)
   #contact
-    padding-top: 80px
+    padding-top: 25px
 </style>
 
 <script>

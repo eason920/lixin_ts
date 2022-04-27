@@ -83,9 +83,9 @@
       </div>
       <div class="s7box2">
         <div
-          class="s6tree"
-          data-aos-once="true"
-          data-aos="fade-left"
+          class="s7tree"
+          data-aos-once="false"
+          data-aos="fade-right"
           data-aos-duration="800"
           data-aos-delay="0"
         >
@@ -296,7 +296,7 @@ export default {
 
 // --------------------------------
 // tree
-.s6tree
+.s7tree
   position: absolute
   z-index: 3
   img
@@ -305,7 +305,7 @@ export default {
 .treeAni2
 
 @media screen and (min-width: $bp-pc)
-  .s6tree
+  .s7tree
     width: 34vw
     bottom: 0vh
     left: 0
@@ -319,7 +319,7 @@ export default {
       transform: rotateY(180deg) skewY(0) translateX(-100%)
 
 @media screen and (max-width: $bp-mb)
-  .s6tree
+  .s7tree
     right: 0
     width: 70vw
     bottom: 2vh
@@ -395,6 +395,7 @@ export default {
 // --------------------------------
 // wave
 .wave
+  bottom: -1px
   svg
     // animation: none
     // transform: translate(-5%, 20%)

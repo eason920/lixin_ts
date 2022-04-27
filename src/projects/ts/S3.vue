@@ -181,7 +181,7 @@
     width: 4.2708333333vw
 @media screen and (max-width: $bp-mb)
   .finger
-    top: 70vw
+    bottom: 35vw
     width: 20vw
 </style>
 

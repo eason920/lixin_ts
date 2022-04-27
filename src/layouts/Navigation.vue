@@ -5,7 +5,7 @@
         :key="item.name"
         v-scroll-to="{
           element: `#${item.section}`,
-          offset: item.offset ? item.offset : offset
+          offset: item.offset
         }"
         v-for="item in list"
       >
@@ -79,7 +79,7 @@ $gray: #333
   top: 0
   left: 0
   display: flex
-  z-index: 9999
+  z-index: 1999
   width: 100%
   align-items: center
   justify-content: center

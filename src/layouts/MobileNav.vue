@@ -10,7 +10,7 @@
     </a>
     <a
       class="nav-item"
-      v-scroll-to="{ element: `#contact`, offset: 0 }"
+      v-scroll-to="{ element: `#contact`, offset: -30 }"
       @click="fn"
     >
       <font-awesome-icon icon="pen" />

@@ -34,7 +34,7 @@
       </div>
       <div class="info">
         <div class="btn flex-c" @click="showCallDialog">
-          <span class="flex-c">
+          <span class="flex-c is-phone">
             <font-awesome-icon icon="phone" />
             {{ info.phone }}
           </span>
@@ -170,12 +170,12 @@ export default {
   }
 }
 
-.logo {
-  width: auto;
-  height: 210px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
+// .logo {
+//   width: auto;
+//   height: 210px;
+//   margin: 0 auto;
+//   margin-bottom: 60px;
+// }
 .info {
   width: 880px;
   margin: 0 auto;
@@ -292,9 +292,9 @@ export default {
     height: 460px;
     padding: 60px 0 80px;
 
-    .logo {
-      width: $contact_logo_tablet_width;
-    }
+    // .logo {
+    //   width: $contact_logo_tablet_width;
+    // }
   }
 }
 
@@ -307,12 +307,12 @@ export default {
     padding: 40px;
     transform: none;
     position: static;
-    margin: 40px auto 40px auto;
+    margin: 0 auto 40px auto;
 
-    .logo {
-      width: $contact_logo_mobile_width;
-      height: auto;
-    }
+    // .logo {
+    //   width: $contact_logo_mobile_width;
+    //   height: auto;
+    // }
   }
 
   .btn {
@@ -345,12 +345,12 @@ export default {
     }
   }
 
-  .logo {
-    margin-bottom: 20px;
-    margin: 0 auto 30px;
-    left: auto;
-    position: relative;
-  }
+  // .logo {
+  //   margin-bottom: 20px;
+  //   margin: 0 auto 30px;
+  //   left: auto;
+  //   position: relative;
+  // }
 
   .address {
     width: 280px;
@@ -378,12 +378,25 @@ export default {
   margin-bottom: 5vw
 $w: 25vw
 .MoonBox
-  padding: 5% 0 0
+  position: relative
+  // padding: 5% 0 0
   width: $w
   height: $w
   display: flex
   justify-content: center
+  align-items: center
   background:
     image: url(~@/projects/ts/all/logobg.png)
     size: cover
+
+@import "src/assets/style/myvar"
+@media screen and (max-width: $bp-mb)
+  .is-phone
+    padding-left: 30px
+  $w: 70vw
+  .MoonBox
+    width: $w
+    height: $w
+    svg
+      width: 100%
 </style>
