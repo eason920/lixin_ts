@@ -114,8 +114,8 @@
   #sec1
     height: calc(100vh - 63px )
     background:
-      size: 100% auto
-      position: 50% 75%
+      size: 50vh auto
+      position: 50% 65%
 
   .s1bird2
     width: 40vw
@@ -128,7 +128,7 @@
     height: $sw
   .s1tree
     width: 70vw
-    bottom: calc(30% + (25 - 604 * .3) * 100vw / 375)
+    bottom: 6vh
 </style>
 
 <!-- COPY -->
@@ -136,7 +136,7 @@
 .txt {
   // @include img_c_pc(1100, 620);
   top: calc(50% + (620 - 540) * 100vw / 1920);
-  font-size:calc(34 * 100vw / 1920);
+  font-size: size(34);
   color: #000;
   font-weight: 600;
   line-height: 1.4;
@@ -160,12 +160,10 @@
   }
 }
 
-@media screen and (max-width: 767px) {
 .txt {
   // @include img_c_m(370, 300);
   top: calc(40% + (300 - 604 * 0.4) * 100vw / 375);
-  font-size:calc(16 * 100vw / 375);
-}
+  font-size: sizem(16);
 }
 </style>
 
