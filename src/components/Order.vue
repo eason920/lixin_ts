@@ -305,7 +305,7 @@ $orange: #e95513;
     overflow: hidden;
     .title {
       color: $orange;
-      font-size: 48px;
+      font-size: calc(100vw * 36 / 1920);
     }
   }
   .order-title {
@@ -446,6 +446,11 @@ $orange: #e95513;
 
     > img {
       display: block;
+    }
+    .order-top {
+      .title {
+      font-size: calc(100vw * 35 / 375);
+      }
     }
     .order-title {
       padding-top: 10px;

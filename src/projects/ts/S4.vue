@@ -84,7 +84,7 @@
         data-aos-duration="1600"
         data-aos-delay="0"
       >
-        <img src="./all/tree.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" />
       </div>
     </section>
   </div>
@@ -228,7 +228,7 @@ export default {
   .swiper-wrapper,
   .swiper-slide,
   .s4item
-    height: 30vh
+    height: 75vw
 
 @media screen and (max-width: $bp-mb) and (orientation: landscape)
   .swiper-container,
@@ -245,18 +245,19 @@ export default {
 
 .s4tx
   font:
-    size: 32px
+    size: 20px
     weight: bold
-  height: 30px
+  line-height: 1.7
   position: absolute
-  right: 5vw
-  bottom: 45px
+  right: .5em
+  bottom: .3em
   color: #fff
-  text-shadow: 0 0 5px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.5)
-
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, 0.5)
 @media screen and (max-width: $bp-mb)
   .s4tx
-    display: none
+    font:
+      size: 12px
+
 
 // --------------------------------
 // -- by case customize
@@ -308,6 +309,7 @@ export default {
 .s4boxt
   position: relative
   z-index: 1
+  @extend %textShadow
 
 $pl: 40px
 .s4deco
@@ -324,14 +326,14 @@ $pl: 40px
   font-size: 18px
 
 .s4s
-  font-size: 32px
   margin: 20px 0 40px
-  @extend %textShadow
+  font:
+    size: 32px
+    weight: 700
 
 .s4p
   font-size: 18px
   line-height: 1.7
-  @extend %textShadow
 
 @media screen and (min-width: $bp-pc)
   .s4boxt
@@ -349,8 +351,8 @@ $pl: 40px
     font-size: 16px
 
   .s4s
-    font-size: 23px
     margin: 18px 0 35px
+    font-size: 23px
 
   .s4p
     font-size: 16px
@@ -403,12 +405,13 @@ $mw: 22vw
 
 @media screen and (min-width: $bp-pc)
   .s4tree
-    width: 25vw
-    bottom: 0vh
+    width: 21.5vw
+    bottom: -0.5vw
+
 @media screen and (max-width: $bp-mb)
   .s4tree
-    width: 57vw
-    bottom: 24vh
+    width: 50vw
+    bottom: 68vw
 </style>
 
 <style lang="scss">

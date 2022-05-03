@@ -9,6 +9,7 @@
     // height: 100%
     width: 100%
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite
+    transform-origin: 50% 100%
   &.no-ani
     svg
       animation: none
@@ -24,8 +25,8 @@
 
 @keyframes move-forever
   0%
-    transform: translate3d(-50%,0,0)
+    transform: translate3d(-50%,0,0) scaleY(.4)
   50%
     transform: translateZ(0)
   to
-    transform: translate3d(-50%,0,0)
+    transform: translate3d(-50%,0,0) scaleY(.4)

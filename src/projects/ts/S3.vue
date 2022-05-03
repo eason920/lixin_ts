@@ -4,9 +4,9 @@
       <div class="s3box" id="box3">
         <div class="s3pic">
           <img v-if="isMobile" src="./3/bg.jpg" class="basic" />
+          <img v-if="isMobile" src="./3/bgtm.png" class="float" />
           <!-- <img src="./3/bgt.png" class="float" /> -->
           <!-- isMobile -->
-          <img v-if="isMobile" src="./3/bgtm.png" class="float" />
         </div>
       </div>
       <div class="s3msg">
@@ -73,6 +73,7 @@
       x: scroll
       y: hidden
     height: 550px
+    position: relative
   .s3pic
     position: relative
     height: 100%
@@ -81,7 +82,7 @@
     .float
       position: absolute
       height: 40%
-      left: 58%
+      left:210px
       bottom: 5%
 
 // --------------------------------
@@ -99,8 +100,10 @@
 .s3tbox
   width: 496px
 .s3t
-  font-size: 18px
+  font-size: 100vw * 18 / 1920
   position: relative
+  width: 70%
+  margin: auto
   &:after, &:before
     content: ''
     position: absolute
@@ -127,37 +130,40 @@
 
 .s3s
   font:
-    size: 32px
-    weight: 400
-  margin: 20px 0 40px
+    size:100vw * 32 / 1920
+    weight: 700
+  margin: 0.8em 0 1.2em
 
 .s3p
-  font-size: 17px
+  font-size: 100vw * 18 / 1920
   line-height: 2
-  width: 570px
+  width:34em
 
 @media screen and (max-width: $bp-mb)
   .s3pic
     padding-top: 90px
   .s3msg
     top: 40px
+    width: 83%
   .s3tbox
-    width: 310px
+    width: 100%
   .s3t
-    font-size: 15px
+    font-size:100vw * 15 / 375
+    width:95%
     b, p
       width: calc(50% - 55px)
 
   .s3s
     font:
-      size: 19px
-    margin: 15px 0 20px
+      size: 100vw * 19 / 375
+    margin: 15px -10% 20px
+    width: 120%
 
   .s3p
     font:
-      size: 14px
+      size: 100vw * 14 / 375
       weight: lighter
-    width: 96%
+    width: 100%
 
 // --------------------------------
 // FINGER BOX

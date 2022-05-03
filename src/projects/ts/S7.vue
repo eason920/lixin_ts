@@ -89,7 +89,7 @@
           data-aos-duration="800"
           data-aos-delay="0"
         >
-          <img src="./all/tree.png" class="treeAni" />
+          <img src="./all/tree1.png" class="treeAni" />
         </div>
         <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
           <img v-if="!isMobile" src="./7/img2.png" />
@@ -182,33 +182,36 @@ export default {
   align-items: flex-start
   text-align: left
   flex-direction: column
+.s7s
+  font:
+    size: 2vw
+    weight: 700
+  padding: 1.5vw 0 2.5vw
 
 @media screen and (min-width: $bp-pc)
   .s7b1l
     width: 23vw
 
   .s7t
-    font-size: 15px
-
-  .s7s
-    font-size: 2vw
-    padding: 1.5vw 0 2.5vw
+    font-size:  100vw * 15 / 1920
 
   .s7p
-    font-size: 18px
+    font-size: 100vw * 18 / 1920
     line-height: 1.7
 @media screen and (max-width: $bp-mb)
   .s7b1l
 
   .s7t
-    font-size: 15px
+    font-size:  100vw * 15 / 375
 
   .s7s
-    font-size: 7.5vw
+    font:
+      size: 7.5vw
+      weight: 700
     padding: 5vw 0 10vw
 
   .s7p
-    font-size: 18px
+    font-size: 100vw * 15 / 375
     line-height: 1.7
 
 // --------------------------------
@@ -306,7 +309,7 @@ export default {
 
 @media screen and (min-width: $bp-pc)
   .s7tree
-    width: 34vw
+    width: 29vw
     bottom: 0vh
     left: 0
     img
@@ -321,7 +324,7 @@ export default {
 @media screen and (max-width: $bp-mb)
   .s7tree
     right: 0
-    width: 70vw
+    width: 60vw
     bottom: 2vh
 
 // --------------------------------
@@ -333,7 +336,9 @@ export default {
   .s7b3t
     text-align: left
     span
-      font-size: 1.9vw
+      font:
+        size: 1.9vw
+        weight: 700
     p
       width: 30vw
       padding:
@@ -354,7 +359,9 @@ export default {
   .s7b3t
     text-align: left
     span
-      font-size: 6vw
+      font:
+        size: 6vw
+        weight: 700
     p
       padding:
         top: 10vw
@@ -378,7 +385,7 @@ export default {
   background:
     image: url(./7/bg.png)
     size: 90%
-    position: right 98%
+    position: right 99%
     repeat: no-repeat
   padding:
     top: 5vw

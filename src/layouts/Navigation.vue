@@ -73,7 +73,7 @@ export default {
 
 <style lang="sass" scoped>
 // nav
-$gray: #333
+$gray: #FFF
 .menu
   position: fixed
   top: 0
@@ -93,7 +93,9 @@ $gray: #333
   a
     display: block
     padding: 30px 0
-    font-size: 1.3vw
+    font:
+      size:  1.3vw
+      weight: 700
     text-decoration: none
     color: #fff
     letter-spacing: .1vw
@@ -116,7 +118,7 @@ $gray: #333
       transform: scaleX(1)
   // white
   &.isWhite
-    background-color: #fff
+    background-color: #C10C
     a
       color: $gray
       &:after

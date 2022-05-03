@@ -299,9 +299,15 @@ export default {
   align-items: flex-start
   text-align: left
   flex-direction: column
+  @extend %textShadow
   & > *
     color: #fff
-    @extend %textShadowDeep
+
+.s5s
+  font:
+   size: 1.7vw
+   weight: 700
+  padding: 1.5vw 0 2.5vw
 
 @media screen and (min-width: $bp-pc)
   .s5boxt
@@ -314,24 +320,23 @@ export default {
   .s5t
     font-size: 15px
 
-  .s5s
-    font-size: 1.7vw
-    padding: 1.5vw 0 2.5vw
-
   .s5p
     font-size: 18px
     line-height: 1.7
 @media screen and (max-width: $bp-mb)
   .s5boxt
     padding: 20vw 8vw 12vw
+
   .s5t
     font-size: 15px
 
   .s5s
-    font-size: 6.4vw
+    font:
+     size: 6.4vw
+     weight: 700
     padding: 5vw 0 10vw
 
   .s5p
-    font-size: 18px
+    font-size: 15px
     line-height: 1.7
 </style>

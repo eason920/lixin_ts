@@ -51,7 +51,7 @@
         data-aos-duration="800"
         data-aos-delay="0"
       >
-        <img src="./all/tree.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" />
       </div>
     </section>
     <section id="sec6-2">
@@ -129,6 +129,8 @@ export default {
     text-align: left
     img
       width: 100%
+      height: 155vw
+      object-fit: cover
 
 // --------------------------------
 // TXT BOX
@@ -165,7 +167,9 @@ $pl: 40px
   font-size: 18px
 
 .s6s
-  font-size: 32px
+  font:
+   size: 32px
+   weight: 700
   margin: 20px 0 40px
 
 .s6p
@@ -226,12 +230,12 @@ $pl: 40px
 
 @media screen and (min-width: $bp-pc)
   .s6tree
-    width: 32vw
-    bottom: 10vh
+    width: 27vw
+    bottom: 5.1vw
 @media screen and (max-width: $bp-mb)
   .s6tree
-    width: 50vw
-    top: 42vh
+    width: 47vw
+    top: 88vw
 
 // --------------------------------
 // HR

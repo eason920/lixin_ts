@@ -254,7 +254,7 @@ export default {
 
   span
     position: relative
-    displlay: block
+    display: block
     width: 100%
     &:before, &:after
       content: ''
@@ -272,12 +272,14 @@ export default {
     padding-bottom: 4vw
 
     span
-      font-size: 26px
-      padding-bottom: 3vw
+      font:
+        size: 42px
+        weight: 700
+      padding-bottom: 1vw
       width: 100%
       &:before, &:after
-        top: 13px
-        width: calc( 50vw - 180px)
+        top: 20px
+        width: calc( 50vw - 300px)
     p
       font-size: 16px
       line-height: 1.5
@@ -288,7 +290,9 @@ export default {
     padding-bottom: 15vw
 
     span
-      font-size: 24px
+      font:
+        size: 24px
+        weight: 700
       padding-bottom: 7vw
       width: 100%
       &:before, &:after

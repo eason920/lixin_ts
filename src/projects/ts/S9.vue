@@ -45,7 +45,7 @@
         data-aos-duration="2000"
         data-aos-delay="0"
       >
-        <img src="./all/tree.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" />
       </div>
       <div class="s9moon">
         <img
@@ -135,7 +135,9 @@ export default {
     font-size: 15px
 
   .s9s
-    font-size: 2vw
+    font:
+      size: 2vw
+      weight: 700
     padding: 1.5vw 0 2.5vw
 
   .s9p
@@ -151,7 +153,9 @@ export default {
     font-size: 15px
 
   .s9s
-    font-size: 6vw
+    font:
+      size: 6vw
+      weight: 700
     padding: 4vw 0 7vw
 
   .s9p
@@ -211,12 +215,12 @@ export default {
 
 @media screen and (min-width: $bp-pc)
   .s9tree
-    width: 32vw
-    bottom: 3vh
+    width: 28vw
+    bottom: 1.3vw
 @media screen and (max-width: $bp-mb)
   .s9tree
-    width: 60vw
-    bottom: 7vh
+    width: 52vw
+    bottom:15vw
 
 // --------------------------------
 // MOON

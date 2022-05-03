@@ -18,7 +18,6 @@
         data-aos-duration="2500"
         data-aos-delay="200"
       />
-
       <div
         class="s1tree"
         data-aos-once="false"
@@ -26,7 +25,7 @@
         data-aos-duration="800"
         data-aos-delay="100"
       >
-        <img src="./all/tree.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" />
       </div>
       <div
         class="s1moon"
@@ -82,6 +81,13 @@
   img
     width: 100%
 
+.s1tree1
+  position: absolute
+  z-index: 3
+  right: 0
+  img
+    width: 100%
+
 @media screen and (min-width: $bp-pc)
   #sec1
     height: 100vh
@@ -107,8 +113,8 @@
     min-height: $smw
 
   .s1tree
-    width: 41vw
-    bottom: 3vw
+    width: 35.5vw
+    bottom: 2.5vw
 
 @media screen and (max-width: $bp-mb)
   #sec1
@@ -127,8 +133,8 @@
     width: $sw
     height: $sw
   .s1tree
-    width: 70vw
-    bottom: calc(30% + (25 - 604 * .3) * 100vw / 375)
+    width: 60vw
+    bottom: calc(30% + (22 - 604 * .3) * 100vw / 375)
 </style>
 
 <!-- COPY -->

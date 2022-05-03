@@ -280,7 +280,7 @@
       </g>
     </g>
     <g
-      style="transform-origin: 50% 50%;"
+      style="transform: scale(.9);transform-origin: 50% 50%;"
       data-aos="zoom-in"
       data-aos-delay="1000"
     >
