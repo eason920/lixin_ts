@@ -16,6 +16,7 @@
       </div>
       <div class="s10boxc">
         <div class="aleft arrow" @click="prevBtns10"><img src="../share/arrow_left.png" /></div>
+        <p class="s10txt">公設示意圖</p>
         <ul v-if="!isMobile" class="s10dot">
           <li
             v-for="item in 5"
@@ -23,7 +24,6 @@
             @click="fnDotChange(item)"
           ></li>
         </ul>
-        <p v-else class="s10txt">公設示意圖</p>
         <div class="aright arrow" @click="nextBtns10"><img src="../share/arrow_right.png" /></div>
       </div>
       <div class="wave">
@@ -36,7 +36,7 @@
           x="0px"
           y="0px"
           viewBox="0 0 1700 360"
-          style="enable-background:new 0 0 1700 360;"
+          style="enable-background:new 0 0 1700 360;transform-origin: 50% 80%"
           xml:space="preserve"
         >
           <linearGradient
@@ -305,6 +305,7 @@ export default {
       left: 2.5vw
       top: 2vw
 
+
 @media screen and (max-width: $bp-mb)
   .s10boxc
     padding: 5vw 5vw 0
@@ -324,11 +325,16 @@ export default {
 .s10txt
   font-size: 15px
   @extend %textShadow
+
 @media screen and (min-width: $bp-pc)
   $c: 40px
   .arrow
     width: $c
     height: $c
+  .s10txt
+    position: absolute
+    top: -4.5em
+    left: calc(50% - 2.8em)
 @media screen and (max-width: $bp-mb)
   $c: 20px
   .arrow

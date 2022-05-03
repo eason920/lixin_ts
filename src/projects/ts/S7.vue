@@ -122,7 +122,7 @@
           x="0px"
           y="0px"
           viewBox="0 0 3813 217"
-          style="enable-background:new 0 0 3813 217;"
+          style="enable-background:new 0 0 3813 217;;transform-origin: 50% 100%"
           xml:space="preserve"
         >
           <path
