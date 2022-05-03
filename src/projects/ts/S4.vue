@@ -120,7 +120,7 @@ export default {
         '新莊國小'
       ],
       swiperOptions4: {
-        loop: true,
+        loop: true, // 是否 slide 後循環
         // initialSlide: 0, // 最初 pic index
         // slidesPerView: 'auto',
         spaceBetween: 0,

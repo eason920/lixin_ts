@@ -38,6 +38,8 @@
         </ul>
       </div>
       <div class="s5boxp">
+        <div class="s5boxPre" @click="prevBtnS5"><b></b></div>
+        <div class="s5boxNex" @click="nextBtnS5"><b></b></div>
         <swiper :options="swiperOptionS5s" ref="swiperS5pre" class="isSwPrev">
           <swiper-slide v-for="item in 5" :key="'s5s' + item"> </swiper-slide>
         </swiper>
@@ -71,9 +73,19 @@ export default {
 
   data() {
     return {
+      vm: this,
       isMobile,
       isTablet,
+      swiperOptionS5s: {
+        loop: true,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false
+        },
+        speed: 800
+      },
       swiperOptionS5: {
+        loop: true,
         autoplay: {
           delay: 1500,
           disableOnInteraction: false
@@ -89,15 +101,21 @@ export default {
               .removeClass('active')
               .eq(eq)
               .addClass('active')
+          },
+          slideChangeTransitionEnd: function() {
+            let eq = this.activeIndex
+            console.log(eq)
+            // this.prevBtnS5()
+            // this.fnDotChange(eq)
+            // this.$refs.swiperS5.$swiper.slideTo(eq)
+            // console.log(this.swiperOptionS5s)
+            // console.log(isMobile)
+            // console.log(Swiper)
+            // console.log($('.isSwPrev'))
+            // this.$refs.swiperS5pre.$swiper.slideTo(eq)
+            // this.$refs.swiperS5nex.$swiper.slideTo(eq)
           }
         }
-      },
-      swiperOptionS5s: {
-        autoplay: {
-          delay: 1500,
-          disableOnInteraction: false
-        },
-        speed: 800
       }
     }
   },
@@ -158,7 +176,6 @@ export default {
       background-image: url('./5/3.jpg')
 
 .isSwMain
-  pointer-events: none
   .swiper-slide
     background:
       position: center
@@ -232,6 +249,9 @@ export default {
     box-shadow: 0 0 12px rgba(0,0,0,.5), 0 0 12px rgba(0,0,0,.5)
 
 @media screen and (min-width: $bp-pc)
+  .isSwMain
+    pointer-events: none
+
   // h
   .swiper-container, // height
   .swiper-wrapper,
@@ -262,7 +282,59 @@ export default {
 
   // gurter
   .s5boxp
+    position: relative
     // padding-left: .5vw
+
+// --------------------------------
+// PRE NEX
+.s5boxp
+  position: relative
+
+.s5boxPre, .s5boxNex
+  display: block
+  position: absolute
+  width: 30px
+  height: 30px
+  z-index: 3
+  b
+    display: block
+    width: 100%
+    height: 100%
+    border: solid 7px #fff
+    cursor: pointer
+
+$lr: 7.5vw
+.s5boxPre
+  left: $lr
+  b
+    border-width: 5px 5px 0 0
+    transform: rotate(225deg)
+
+.s5boxNex
+  right: $lr
+  b
+    border-width: 5px 5px 0 0
+    transform: rotate(45deg)
+
+@media screen and (min-width: $bp-pc)
+  .s5boxPre, .s5boxNex
+    bottom: 5vw
+
+  $lr: 5vw
+  .s5boxPre
+    left: $lr
+    b
+      border-width: 5px 5px 0 0
+
+  .s5boxNex
+    right: $lr
+    b
+      border-width: 5px 5px 0 0
+
+@media screen and (max-width: $bp-mb)
+  .s5boxPre, .s5boxNex
+    top: 50%
+    transform: translateY(-50%)
 
 // --------------------------------
 // dot
