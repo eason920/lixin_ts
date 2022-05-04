@@ -36,6 +36,7 @@
           data-aos-delay="0"
         >
           <img src="./9/1.jpg" />
+          <span>十邑設計<br><br>王勝正設計師</span>
         </div>
       </div>
       <div
@@ -179,6 +180,18 @@ export default {
     position: relative
     z-index: 1
     width: 100%
+  span
+   position: absolute
+   top: calc(50% - 7.5em)
+   right: 1.5em
+   color: #fff
+   width:1em
+   text-align: center
+   z-index: 4
+   line-height: 1.35
+   font: 
+    size:100vw * 24 / 1920
+    weight: 700
 
 @media screen and (min-width: $bp-pc)
   .s9boxp
@@ -203,6 +216,9 @@ export default {
       border-radius: 31vw
     img
       border-radius: 31vw
+    span
+      font: 
+        size:100vw * 12 / 375
 
 // --------------------------------
 // tree
