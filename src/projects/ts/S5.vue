@@ -101,19 +101,6 @@ export default {
               .removeClass('active')
               .eq(eq)
               .addClass('active')
-          },
-          slideChangeTransitionEnd: function() {
-            let eq = this.activeIndex
-            console.log(eq)
-            // this.prevBtnS5()
-            // this.fnDotChange(eq)
-            // this.$refs.swiperS5.$swiper.slideTo(eq)
-            // console.log(this.swiperOptionS5s)
-            // console.log(isMobile)
-            // console.log(Swiper)
-            // console.log($('.isSwPrev'))
-            // this.$refs.swiperS5pre.$swiper.slideTo(eq)
-            // this.$refs.swiperS5nex.$swiper.slideTo(eq)
           }
         }
       }
@@ -146,7 +133,24 @@ export default {
 
   created() {},
 
-  mounted() {},
+  mounted() {
+    let xStr = 0
+    let xEnd = 0
+    const area = 10
+    $('.s5boxp').on('touchstart', e => {
+      xStr = e.targetTouches[0].pageX
+    })
+    $('.s5boxp').on('touchmove', e => {
+      xEnd = e.targetTouches[0].pageX - xStr
+    })
+    $('.s5boxp').on('touchend', e => {
+      if (xEnd > area) {
+        this.prevBtnS5()
+      } else if (xEnd < area * -1) {
+        this.nextBtnS5()
+      }
+    })
+  },
 
   computed: {}
 }
@@ -176,6 +180,7 @@ export default {
       background-image: url('./5/3.jpg')
 
 .isSwMain
+  pointer-events: none
   .swiper-slide
     background:
       position: center
@@ -249,9 +254,6 @@ export default {
     box-shadow: 0 0 12px rgba(0,0,0,.5), 0 0 12px rgba(0,0,0,.5)
 
 @media screen and (min-width: $bp-pc)
-  .isSwMain
-    pointer-events: none
-
   // h
   .swiper-container, // height
   .swiper-wrapper,

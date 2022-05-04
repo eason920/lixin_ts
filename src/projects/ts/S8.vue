@@ -45,6 +45,8 @@
 import { isMobile, isTablet } from '@/utils'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+import $ from 'jquery'
+let page = 0
 
 export default {
   components: {
@@ -57,15 +59,15 @@ export default {
       isMobile,
       isTablet,
       swipList: [
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖',
-        '樣品屋實拍圖'
+        '樣品屋實拍圖1',
+        '樣品屋實拍圖2',
+        '樣品屋實拍圖3',
+        '樣品屋實拍圖4',
+        '樣品屋實拍圖5',
+        '樣品屋實拍圖6',
+        '樣品屋實拍圖7',
+        '樣品屋實拍圖8',
+        '樣品屋實拍圖9'
       ],
       dotList: ['24坪', '39坪', '65坪'],
       current: 2,
@@ -84,6 +86,42 @@ export default {
           el: '.swiper-pagination',
           clickable: true,
           type: 'bullets'
+        },
+        on: {
+          slideChangeTransitionStart: function() {
+            let eq = this.activeIndex
+            console.log(eq)
+            switch (eq) {
+              case 1:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
+                  .addClass('active')
+                break
+              case 10:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
+                  .addClass('active')
+                break
+              case 4:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(1)
+                  .addClass('active')
+                break
+              case 7:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(2)
+                  .addClass('active')
+                break
+              default:
+            }
+          },
+          slideChangeTransitionEnd: function() {
+            // let eq = this.activeIndex
+          }
         }
       }
     }

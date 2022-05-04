@@ -15,7 +15,9 @@
         </swiper>
       </div>
       <div class="s10boxc">
-        <div class="aleft arrow" @click="prevBtns10"><img src="../share/arrow_left.png" /></div>
+        <div class="aleft arrow" @click="prevBtns10">
+          <img src="../share/arrow_left.png" />
+        </div>
         <p class="s10txt">公設示意圖</p>
         <ul v-if="!isMobile" class="s10dot">
           <li
@@ -24,7 +26,9 @@
             @click="fnDotChange(item)"
           ></li>
         </ul>
-        <div class="aright arrow" @click="nextBtns10"><img src="../share/arrow_right.png" /></div>
+        <div class="aright arrow" @click="nextBtns10">
+          <img src="../share/arrow_right.png" />
+        </div>
       </div>
       <div class="wave">
         <!-- <img src="./S6/wwave.svg" /> -->
@@ -68,6 +72,8 @@ import 'swiper/css/swiper.css'
 
 import { isMobile, isTablet } from '@/utils'
 
+let msgAry = ['msg1', 'msg2', 'msg3', 'msg4', 'msg5']
+
 export default {
   name: 'swiper-example-thumbs-gallery',
   title: 'Thumbs gallery with Two-way control',
@@ -81,6 +87,7 @@ export default {
       isMobile,
       isTablet,
       swiperOptions10: {
+        loop: true,
         autoplay: {
           delay: 1500,
           disableOnInteraction: false
@@ -96,10 +103,12 @@ export default {
               .removeClass('active')
               .eq(eq)
               .addClass('active')
+            $('.s10txt').text(msgAry[eq])
           }
         }
       },
       swiperOptions10s: {
+        loop: true,
         autoplay: {
           delay: 1500,
           disableOnInteraction: false
@@ -135,7 +144,25 @@ export default {
 
   created() {},
 
-  mounted() {},
+  mounted() {
+    $('.s10txt').text(msgAry[0])
+    let xStr = 0
+    let xEnd = 0
+    const area = 10
+    $('.s10boxp').on('touchstart', e => {
+      xStr = e.targetTouches[0].pageX
+    })
+    $('.s10boxp').on('touchmove', e => {
+      xEnd = e.targetTouches[0].pageX - xStr
+    })
+    $('.s10boxp').on('touchend', e => {
+      if (xEnd > area) {
+        this.prevBtns10()
+      } else if (xEnd < area * -1) {
+        this.nextBtns10()
+      }
+    })
+  },
 
   computed: {}
 }
@@ -304,7 +331,6 @@ export default {
     margin:
       left: 2.5vw
       top: 2vw
-
 
 @media screen and (max-width: $bp-mb)
   .s10boxc
