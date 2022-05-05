@@ -14,11 +14,11 @@
         <div class="form">
           <div class="group">
             <div class="row">
-              <label>姓名</label>
+              <label>姓名<span>*</span></label>
               <el-input v-model="form.name" placeholder></el-input>
             </div>
             <div class="row">
-              <label>手機</label>
+              <label>手機<span>*</span></label>
               <el-input v-model="form.phone" placeholder></el-input>
             </div>
             <!-- <div class="row">
@@ -58,7 +58,7 @@
               </el-select>
             </div> -->
             <div class="row" data-aos="fade-down" data-aos-delay="300">
-              <label>需求房型<span>*</span></label>
+              <label>需求房型</label>
               <el-select v-model="form.room_type" placeholder>
                 <el-option v-for="city in ['24坪（2-3房）', '39坪（3-4房）', '60坪（4-6房）']" :key="city" :label="city" :value="city" no-data-text=""></el-option>
               </el-select>
@@ -208,6 +208,14 @@ export default {
       })
     },
 
+    alertPhoneValidate() {
+      const h = this.$createElement;
+      this.$notify({
+        title: "格式錯誤",
+        message: h("i", { style: "color: #82191d" }, "「手機」需為 10 碼數字"),
+      });
+    },
+
     submit() {
       if (this.isSubmit) return
       if (!this.isVerify) return
@@ -227,6 +235,11 @@ export default {
         this.alertValidate()
         this.isSubmit = false
         return
+      }
+      if (this.form.phone.length != 10) {
+        this.alertPhoneValidate();
+        this.isSubmit = false;
+        return;
       }
       const urlParams = new URLSearchParams(window.location.search)
       const utmSource = urlParams.get('utm_source')
@@ -256,7 +269,7 @@ export default {
       const sec = time.getSeconds()
       const date = `${year}-${month}-${day} ${hour}:${min}:${sec}`
       fetch(
-        `https://script.google.com/macros/s/AKfycbyQKCOhxPqCrLXWdxsAaAH06Zwz_p6mZ5swK80USQ/exec?name=${this.form.name}&phone=${this.form.phone}&email=${this.form.email}&cityarea=${this.form.city}${this.form.area}&msg=${this.form.msg}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_content=${utmContent}&utm_campaign=${utmCampaign}&date=${date}&campaign_name=${info.caseName}
+        `https://script.google.com/macros/s/AKfycbyQKCOhxPqCrLXWdxsAaAH06Zwz_p6mZ5swK80USQ/exec?name=${this.form.name}&phone=${this.form.phone}&email=${this.form.email}&cityarea=${this.form.city}${this.form.area}&room_type=${this.form.room_type}&msg=${this.form.msg}&utm_source=${utmSource}&utm_medium=${utmMedium}&utm_content=${utmContent}&utm_campaign=${utmCampaign}&date=${date}&campaign_name=${info.caseName}
       `,
         {
           method: 'GET'
@@ -404,6 +417,7 @@ $orange: #e95513;
       opacity: 0.8;
       color: #000;
       text-align: left;
+      span{color: #C00;}
     }
   }
 
