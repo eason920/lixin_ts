@@ -72,7 +72,7 @@ import 'swiper/css/swiper.css'
 
 import { isMobile, isTablet } from '@/utils'
 
-let msgAry = ['msg1', 'msg2', 'msg3', 'msg4', 'msg5']
+let msgAry = ['會議家教室', '青春飛輪室', '高爾夫球室', 'VIP宴會廳', '尊榮玄關']
 
 export default {
   name: 'swiper-example-thumbs-gallery',

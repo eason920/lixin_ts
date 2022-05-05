@@ -13,6 +13,7 @@
 
 html,
 body {
+    overflow-y: auto;
     overflow-x: hidden;
     *::-webkit-scrollbar {
         // display: none;
@@ -43,7 +44,7 @@ body {
     background-size: contain;
     background-position: top;
     background-repeat: repeat-y;
-    overflow: hidden; //試底下多的那塊哪來的
+   // overflow: hidden; //試底下多的那塊哪來的
 
     &.no-padding-top {
         padding-top: 0;

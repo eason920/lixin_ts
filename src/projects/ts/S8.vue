@@ -59,15 +59,15 @@ export default {
       isMobile,
       isTablet,
       swipList: [
-        '樣品屋實拍圖1',
-        '樣品屋實拍圖2',
-        '樣品屋實拍圖3',
-        '樣品屋實拍圖4',
-        '樣品屋實拍圖5',
-        '樣品屋實拍圖6',
-        '樣品屋實拍圖7',
-        '樣品屋實拍圖8',
-        '樣品屋實拍圖9'
+        '24坪-樣品屋實拍圖',
+        '24坪-樣品屋實拍圖',
+        '24坪-樣品屋實拍圖',
+        '39坪-樣品屋實拍圖',
+        '39坪-樣品屋實拍圖',
+        '39坪-樣品屋實拍圖',
+        '65坪-樣品屋實拍圖',
+        '65坪-樣品屋實拍圖',
+        '65坪-樣品屋實拍圖'
       ],
       dotList: ['24坪', '39坪', '65坪'],
       current: 2,
@@ -98,12 +98,6 @@ export default {
                   .eq(0)
                   .addClass('active')
                 break
-              case 10:
-                $('.s8sw li').removeClass('active')
-                $('.s8sw li')
-                  .eq(0)
-                  .addClass('active')
-                break
               case 4:
                 $('.s8sw li').removeClass('active')
                 $('.s8sw li')
@@ -111,6 +105,30 @@ export default {
                   .addClass('active')
                 break
               case 7:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(2)
+                  .addClass('active')
+                break
+              case 3:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
+                  .addClass('active')
+                break
+              case 6:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(1)
+                  .addClass('active')
+                break
+              case 9:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(2)
+                  .addClass('active')
+                break
+              case 0:
                 $('.s8sw li').removeClass('active')
                 $('.s8sw li')
                   .eq(2)
