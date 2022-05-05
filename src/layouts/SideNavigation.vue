@@ -5,7 +5,7 @@
       <div :class="`menubg ${isOpen ? 'open' : ''}`" />
       <div :class="`menu ${isOpen ? 'open' : ''}`" @click="toggleSidebar">
         <img v-if="isOpen" src="@/projects/share/close.png" class="close" alt />
-        <img src="@/assets/img/menu-btn.png" alt />
+      <!--   <img src="@/assets/img/menu-btn.png" alt /> -->
       </div>
       <div :class="`mask ${isOpen ? 'open' : ''}`" @click="toggleSidebar" />
       <ul :class="`navlist ${isOpen ? 'open' : ''}`">
