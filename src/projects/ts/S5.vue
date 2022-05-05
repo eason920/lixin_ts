@@ -51,6 +51,7 @@
         <swiper :options="swiperOptionS5s" ref="swiperS5nex" class="isSwNext">
           <swiper-slide v-for="item in 5" :key="'s5s' + item"> </swiper-slide>
         </swiper>
+        <div class="s5tx">現場實景</div>
       </div>
     </section>
   </div>
@@ -252,6 +253,18 @@ export default {
   &.isSwMain
     z-index: 2
     box-shadow: 0 0 12px rgba(0,0,0,.5), 0 0 12px rgba(0,0,0,.5)
+.s5tx
+  font:
+     size: 14px
+  line-height: 1.7
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: .8em
+  color: #fff
+  z-index: 9
+  text-shadow: 0 0 0.55em rgba(0,0,0,1), 0 0 0.2em rgba(0,0,0,1)
+
 
 @media screen and (min-width: $bp-pc)
   // h
@@ -262,11 +275,13 @@ export default {
 
   // w
   .swiper-container
-    width: 32.9vw // height
+    width: 32.9% // height
 
   // gurter
   .s5boxp
     // padding-left: .1vw
+  
+
 
 @media screen and (max-width: $bp-mb)
   // h
@@ -286,6 +301,10 @@ export default {
   .s5boxp
     position: relative
     // padding-left: .5vw
+    
+  .s5tx
+    font:
+      size: 12px
 
 // --------------------------------
 // PRE NEX

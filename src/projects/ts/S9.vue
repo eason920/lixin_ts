@@ -16,7 +16,7 @@
           data-aos-duration="800"
           data-aos-once="false"
         >
-          十邑設計-富貴牡丹、新東方
+          十邑設計-涵碧樓 設計團隊
         </div>
         <div
           class="s9p transorileftTop"
@@ -127,6 +127,9 @@ export default {
   flex-direction: column
   color: #fff
 
+.s9p
+  text-align: justify
+
 @media screen and (min-width: $bp-pc)
   .s9boxt
     width: 28vw
@@ -142,7 +145,7 @@ export default {
     padding: 1.5vw 0 2.5vw
 
   .s9p
-    width: 84%
+    width: 90%
     font-size: 18px
     line-height: 1.7
 

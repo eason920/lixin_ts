@@ -164,17 +164,19 @@ $pl: 40px
   text-align: left
 
 .s6t
-  font-size: 18px
+  font-size: 100vw * 18 / 1920
 
 .s6s
   font:
-   size: 32px
+   size: 100vw * 32 / 1920
    weight: 700
-  margin: 20px 0 40px
+  margin: 0.625em 0 1.25em
 
 .s6p
-  font-size: 18px
+  font-size: 100vw * 18 / 1920
   line-height: 1.7
+  text-align: justify
+
 
 @media screen and (min-width: $bp-pc)
   .s6boxt
@@ -187,20 +189,20 @@ $pl: 40px
   .s6boxt
     margin: 20vw 6vw 0
 
-  $pl: 10vw
+  $pl: 5vw
   .s6deco
     padding-left: $pl
     margin-bottom: 25vw
 
   .s6t
-    font-size: 16px
+    font-size: 100vw * 16 / 375
 
   .s6s
-    font-size: 23px
-    margin: 18px 0 35px
+    font-size: 100vw * 23 / 375
+    margin: 0.78em 0 1.52em
 
   .s6p
-    font-size: 16px
+    font-size:  100vw * 16 / 375
     line-height: 1.7
 
 // --------------------------------

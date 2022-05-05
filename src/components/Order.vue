@@ -44,7 +44,7 @@
                   end: '18:00',
                 }"
               ></el-time-select>
-            </div> -->
+            </div>
             <div class="row">
               <label>需求房型</label>
               <el-select v-model="form.house" placeholder>
@@ -55,6 +55,12 @@
                   :value="city"
                   no-data-text=""
                 ></el-option>
+              </el-select>
+            </div> -->
+            <div class="row" data-aos="fade-down" data-aos-delay="300">
+              <label>需求房型<span>*</span></label>
+              <el-select v-model="form.room_type" placeholder>
+                <el-option v-for="city in ['24坪（2-3房）', '39坪（3-4房）', '60坪（4-6房）']" :key="city" :label="city" :value="city" no-data-text=""></el-option>
               </el-select>
             </div>
             <!-- <div class="row">
@@ -170,6 +176,7 @@ export default {
         email: '',
         city: '',
         area: '',
+        room_type: '',
         msg: '',
         time_start: '',
         time_end: ''
@@ -231,6 +238,7 @@ export default {
       formData.append('phone', this.form.phone)
       formData.append('email', this.form.email)
       formData.append('msg', this.form.msg)
+      formData.append('room_type', this.form.room_type)
       // formData.append('time_start', this.form.time_start)
       // formData.append('time_end', this.form.time_end)
       formData.append('city', this.form.city)

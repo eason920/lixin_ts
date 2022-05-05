@@ -15,7 +15,7 @@
             市心之城<b></b>
             <p></p>
           </div>
-          <div class="s3s">中正路、新泰路交匯3000坪基地</div>
+          <div class="s3s">中正路、新泰路交匯3000坪角地</div>
         </div>
         <div class="s3p">
           坐落新莊最熱鬧的繁華雙大道，地段價值湧現，優勢的總價帶，北市上班，下班住最安全的新房子，坐享大都市咫尺繁華，更奢侈悠遊於超凡格局，北台灣最優越CP值地段，戶戶珍稀，席席爭藏。
@@ -70,7 +70,7 @@
     overflow:
       x: scroll
       y: hidden
-    height: 550px
+    height: 550 * 100vw / 375
     position: relative
   .s3pic
     position: relative
@@ -80,7 +80,7 @@
     .float
       position: absolute
       height: 40%
-      left:210px
+      left: 210 * 100vw / 375
       bottom: 5%
 
 // --------------------------------
@@ -225,7 +225,7 @@ export default {
       console.log('=========MB=========')
       const $doc = document.getElementById('box3')
       setTimeout(() => {
-        let SL = 240
+        let SL =  80 * $doc.offsetWidth / 100  // 位子換成%
         $doc.scrollLeft = SL
 
         // $('#fingerbox').fadeOut()

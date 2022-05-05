@@ -25,7 +25,7 @@
             data-aos-duration="800"
             data-aos-once="false"
           >
-            採用101、宏盛帝寶等級CFT鋼柱，採高雄中鋼高拉力鋼板，柱內由下往上以高壓灌漿混凝土入鋼柱；超越宏盛帝寶7000磅高強度混凝土。
+            採用101、宏盛帝寶等級C.F.T.鋼柱，採高雄中鋼高拉力鋼板，柱內由下往上以高壓灌漿混凝土入鋼柱；超越宏盛帝寶7000磅高強度混凝土。
           </div>
           <ul class="s7u">
             <li
@@ -40,21 +40,21 @@
               data-aos-duration="800"
               data-aos-once="false"
             >
-              剛度提高，地震和風作用下比傳統SRC不易變形
+              剛度提高，地震與風吹下比傳統SRC不易變形
             </li>
             <li
               data-aos="zoom-in"
               data-aos-duration="800"
               data-aos-once="false"
             >
-              提高混凝土強度，柱截面變小，使室內空間增大
+              提高混凝土強度，柱截面變小，室內空間增大
             </li>
             <li
               data-aos="zoom-in"
               data-aos-duration="800"
               data-aos-once="false"
             >
-              具有穩定的滯回性能，使建築的抗震性能大幅度提高
+              具有穩定的滯回性能，抗震性能大幅提高
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@
         <div
           class="s7tree"
           data-aos-once="false"
-          data-aos="fade-right"
+          data-aos="fade"
           data-aos-duration="800"
           data-aos-delay="0"
         >
@@ -180,7 +180,7 @@ export default {
 .s7b1l
   display: flex
   align-items: flex-start
-  text-align: left
+  text-align: justify
   flex-direction: column
 .s7s
   font:
@@ -221,19 +221,19 @@ export default {
     top: 2vw
     left: 20px
   li
-    font-size: 18px
+    font-size: 100vw * 18 / 1920
     line-height: 1.3
-    padding-bottom: 1vw
+    padding-bottom: 1.1em
     position: relative
     &:before
-      width: 10px
-      height: 10px
+      width: 0.5em
+      height: 0.5em
       position: absolute
       background: #000
       border-radius: 50%
       content: ''
-      left: -17px
-      top: 8px
+      left: -0.94em
+      top: 0.38em
 
 @media screen and (max-width: $bp-mb)
   .s7u
@@ -241,10 +241,7 @@ export default {
       top: 10vw
       bottom: 7vw
     li
-      font-size: 14px
-      padding-bottom: 4vw
-      &:before
-        top: 5px
+      font-size: 100vw * 13 / 375
 
 @media screen and (min-width: $bp-pc)
   .s7box1
@@ -312,6 +309,7 @@ export default {
     width: 29vw
     bottom: 0vh
     left: 0
+    transform: translateX(-10%)
     img
       transform: rotateY(180deg) skewY(-2deg) translateX(-100%)
       animation: tree2 5s infinite alternate
@@ -326,6 +324,7 @@ export default {
     right: 0
     width: 60vw
     bottom: 2vh
+    transform: translateX(10%)
 
 // --------------------------------
 // BOX3

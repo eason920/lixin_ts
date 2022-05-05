@@ -10,7 +10,9 @@
         </p>
       </div>
       <div class="s8boxp">
-        <swiper :options="swiperOptions8" ref="swipers8">
+        <swiper :options="swiperOptions8" ref="swipers8"
+        @mouseenter.native="mouseEnter"
+        @mouseleave.native="mouseLeave">
           <swiper-slide v-for="(item, i) in swipList" :key="'s8' + i">
             <div class="s8item">
               <div class="s8tx">{{ item }}</div>
@@ -77,8 +79,9 @@ export default {
         // slidesPerView: 'auto',
         spaceBetween: 0,
         autoplay: {
-          delay: 1500,
-          disableOnInteraction: false // 換頁後是否停止 autoplay
+          delay: 2500,
+          disableOnInteraction: false, // 換頁後是否停止 autoplay
+          stopOnLastSlide: false,
         },
         speed: 800,
         grabCursor: true,
@@ -90,7 +93,7 @@ export default {
         on: {
           slideChangeTransitionStart: function() {
             let eq = this.activeIndex
-            console.log(eq)
+         //   console.log(eq)
             switch (eq) {
               case 1:
                 $('.s8sw li').removeClass('active')
@@ -108,6 +111,12 @@ export default {
                 $('.s8sw li').removeClass('active')
                 $('.s8sw li')
                   .eq(2)
+                  .addClass('active')
+                break
+              case 10:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
                   .addClass('active')
                 break
               case 3:
@@ -145,6 +154,12 @@ export default {
     }
   },
   methods: {
+    mouseEnter() { 
+      this.$refs.swipers8.$swiper.autoplay.stop();
+    },
+    mouseLeave() { 
+      this.$refs.swipers8.$swiper.autoplay.start();
+    },
     prevBtns8() {
       this.$refs.swipers8.$swiper.slidePrev()
     },
@@ -161,7 +176,7 @@ export default {
       this.$refs.swipers8.$swiper.slideTo(eq)
     },
     fnSW(i) {
-      console.log(i)
+  //   console.log(i)
       this.current = i
       let eq = 1
       switch (i) {

@@ -81,12 +81,6 @@
   img
     width: 100%
 
-.s1tree1
-  position: absolute
-  z-index: 3
-  right: 0
-  img
-    width: 100%
 
 @media screen and (min-width: $bp-pc)
   #sec1
@@ -119,6 +113,8 @@
 @media screen and (max-width: $bp-mb)
   #sec1
     height: calc(100vh - 63px )
+    min-height: 100vw * 550 / 375
+    max-height: 100vw *750 /375
     background:
       size: 100% auto
       position: 50% 75%
@@ -134,7 +130,7 @@
     height: $sw
   .s1tree
     width: 60vw
-    bottom: calc(30% + (22 - 604 * .3) * 100vw / 375)
+    bottom: calc(30% + (15 - 604 * .3) * 100vw / 375)
 </style>
 
 <!-- COPY -->
@@ -144,7 +140,7 @@
   top: calc(50% + (620 - 540) * 100vw / 1920);
   font-size:calc(34 * 100vw / 1920);
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
   z-index: 2;
   letter-spacing: 0.01em;

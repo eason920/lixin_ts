@@ -2,16 +2,10 @@
   <div class="relative">
     <section id="sec10">
       <div class="s10boxp">
-        <swiper :options="swiperOptions10s" ref="swipers10pre" class="isSwPrev">
-          <swiper-slide v-for="item in 5" :key="'s10s' + item"> </swiper-slide>
-        </swiper>
-        <!-- main vvv -->
-        <swiper :options="swiperOptions10" ref="swipers10" class="isSwMain">
+        <swiper :options="swiperOptions10" ref="swipers10" class="isSwMain"
+        @mouseenter.native="mouseEnter"
+        @mouseleave.native="mouseLeave">
           <swiper-slide v-for="item in 5" :key="'s10' + item"> </swiper-slide>
-        </swiper>
-        <!-- main ^^^ -->
-        <swiper :options="swiperOptions10s" ref="swipers10nex" class="isSwNext">
-          <swiper-slide v-for="item in 5" :key="'s10s' + item"> </swiper-slide>
         </swiper>
       </div>
       <div class="s10boxc">
@@ -87,18 +81,21 @@ export default {
       isMobile,
       isTablet,
       swiperOptions10: {
+        slidesPerView: 3, 
         loop: true,
+        spaceBetween: 20,
         autoplay: {
-          delay: 4000,
+          delay: 6000,
           disableOnInteraction: false
         },
-        speed: 1500,
+        speed: 1000,
         on: {
           slideChangeTransitionStart: function() {
             let eq = this.activeIndex
             if (eq >= 5) {
               eq = eq - 5
-            }
+            } 
+             console.log(eq)
             $('.s10dot li')
               .removeClass('active')
               .eq(eq)
@@ -107,27 +104,14 @@ export default {
           }
         }
       },
-      swiperOptions10s: {
-        loop: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false
-        },
-        speed: 1500,
-      }
     }
   },
-
   methods: {
     prevBtns10() {
       this.$refs.swipers10.$swiper.slidePrev()
-      this.$refs.swipers10pre.$swiper.slidePrev()
-      this.$refs.swipers10nex.$swiper.slidePrev()
     },
     nextBtns10() {
       this.$refs.swipers10.$swiper.slideNext()
-      this.$refs.swipers10pre.$swiper.slideNext()
-      this.$refs.swipers10nex.$swiper.slideNext()
     },
     fnDotChange(i) {
       let eq = i - 1
@@ -137,8 +121,6 @@ export default {
       }
       // console.log(eq)
       this.$refs.swipers10.$swiper.slideTo(eq)
-      this.$refs.swipers10pre.$swiper.slideTo(eq)
-      this.$refs.swipers10nex.$swiper.slideTo(eq)
     }
   },
 
@@ -171,34 +153,13 @@ export default {
 <style lang="sass" scoped>
 @import "src/assets/style/myvar"
 // 圖片
-.isSwPrev
-  pointer-events: none
-  .swiper-slide
-    background:
-      position: center
-      size: cover
-    &:nth-child(1), &:nth-child(6)
-      background-image: url('./10/4.jpg')
-
-    &:nth-child(2), &:nth-child(7)
-      background-image: url('./10/5.jpg')
-
-    &:nth-child(3), &:nth-child(8)
-      background-image: url('./10/1.jpg')
-
-    &:nth-child(4)
-      background-image: url('./10/2.jpg')
-
-    &:nth-child(5)
-      background-image: url('./10/3.jpg')
-
 .isSwMain
   pointer-events: none
   .swiper-slide
     background:
       position: center
       size: cover
-    &:nth-child(1), &:nth-child(6)
+    &:nth-child(1), &:nth-child(6), &:nth-child(11)
       background-image: url('./10/5.jpg')
 
     &:nth-child(2), &:nth-child(7)
@@ -207,32 +168,12 @@ export default {
     &:nth-child(3), &:nth-child(8)
       background-image: url('./10/2.jpg')
 
-    &:nth-child(4)
+    &:nth-child(4), &:nth-child(9)
       background-image: url('./10/3.jpg')
 
-    &:nth-child(5)
+    &:nth-child(5), &:nth-child(10)
       background-image: url('./10/4.jpg')
 
-.isSwNext
-  pointer-events: none
-  .swiper-slide
-    background:
-      position: center
-      size: cover
-    &:nth-child(1), &:nth-child(6)
-      background-image: url('./10/1.jpg')
-
-    &:nth-child(2), &:nth-child(7)
-      background-image: url('./10/2.jpg')
-
-    &:nth-child(3), &:nth-child(8)
-      background-image: url('./10/3.jpg')
-
-    &:nth-child(4)
-      background-image: url('./10/4.jpg')
-
-    &:nth-child(5)
-      background-image: url('./10/5.jpg')
 
 // --------------------------------
 // -- by case customize
@@ -270,10 +211,12 @@ export default {
     height: 39.394vw // w * 0.5627
 
   .swiper-container
-    width: 70vw // height
+    width: 100% // height
 
   .isSwMain
-    margin-left: 15vw
+    margin-left: 0
+    .swiper-slide-active
+      transform:scale(.97)
 
   .isSwPrev,
   .isSwNext
