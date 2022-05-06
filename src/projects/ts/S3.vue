@@ -133,7 +133,7 @@
   margin: 0.8em 0 1.2em
 
 .s3p
-  font-size: 100vw * 18 / 1920
+  font-size:(100vw * 18 / 1920)
   line-height: 2
   width:34em
 

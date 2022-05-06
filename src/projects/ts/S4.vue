@@ -52,7 +52,7 @@
             data-aos-delay="300"
             data-aos-once="false"
           >
-            捷運站290米(步行3~5分鐘)，6.6萬坪運動公園(步行3~4分鐘)，方圓500m內14家金融機構，星巴克、全家超商、7-11、全聯、區公所、郵局、新莊國中小，隨處皆是生活日常風景，處處是驚喜。
+            捷運站290米(步行3~5分鐘)，6.6萬坪運動公園230米(步行3~4分鐘)，方圓500m內14家金融機構，星巴克、7-11、全聯、區公所、郵局、學校，隨處皆是日常風景，處處是驚喜。
           </div>
         </div>
         <ul class="s4dot">
@@ -332,15 +332,16 @@ $pl: 40px
     weight: 700
 
 .s4p
-  font-size: 18px
+  font-size: 100vw * 18 / 1920
   line-height: 1.7
+  text-align: justify
 
 @media screen and (min-width: $bp-pc)
   .s4boxt
     padding-bottom: 7.5vw
 @media screen and (max-width: $bp-mb)
   .s4boxt
-    margin: 20vw 6vw 0
+    margin: 20vw 10vw 0 6vw
 
   $pl: 10vw
   .s4deco
@@ -355,7 +356,7 @@ $pl: 40px
     font-size: 23px
 
   .s4p
-    font-size: 16px
+    font-size: 100vw * 16 / 375
     line-height: 1.7
 
 // dot

@@ -1,6 +1,8 @@
 <template>
   <div class="relative sec7-outer">
     <section id="sec7">
+      <img src="./7/exterior.png" alt="外觀" class="bg" v-if="!isMobile">
+      <img src="./7/exterior_m.png" alt="外觀" class="bg" v-if="isMobile">
       <div class="s7box1">
         <div class="s7b1l">
           <div
@@ -237,6 +239,7 @@ export default {
 
 @media screen and (max-width: $bp-mb)
   .s7u
+    width:110%
     padding:
       top: 10vw
       bottom: 7vw
@@ -382,21 +385,31 @@ export default {
 #sec7
   position: relative
   background:
-    image: url(./7/bg.png)
-    size: 90%
-    position: right 99%
+    image: url(./all/mount.png)
+    size: 110%
+    position: 50% 125%
     repeat: no-repeat
   padding:
     top: 5vw
     bottom: 14vh
+.bg
+  position: absolute
+  bottom: -1vw
+  right: 11vw
+  width: 580 * 100vw / 1920
 
 @media screen and (max-width: $bp-mb)
   #sec7
     background:
-      size: 110%
-      position: 20% 99%
+      size: 110% auto
+      position: 100% 103%
       repeat: no-repeat
     padding-bottom: 10vh
+  .bg
+    position: absolute
+    bottom: 0vw
+    right: 5.5vw
+    width: 145 * 100vw / 375
 
 // --------------------------------
 // wave

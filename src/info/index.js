@@ -11,14 +11,14 @@ export default {
 
   houseInfos: [
     ['投資興建', '泰坤建設實業(股)公司 '],
-    ['格局規劃', '2~4房'],
+    ['格局規劃', '2~6房'],
     ['基地面積', '約2977.6坪'],
     ['棟戶規劃', '5棟、759戶41店面'],
     ['公設規劃', '十邑設計'],
     ['建照號碼', '106莊建字第00126號']
   ],
 
-  gtmCode: ['K4H35M8'], // 可放置多個
+  gtmCode: ['KQT6727'], // 可放置多個
   recaptcha_site_key_v2: '6Lep-78UAAAAAMaZLtddpvpixEb8cqu7v7758gLz',
   recaptcha_site_key: '6Lck-L8UAAAAABxfvNA1NJuBrdl3iLFc3GkudC8s', // recaptcha v3
   recaptcha_user_token: '6Lck-L8UAAAAAIcvenwGDl8_Q1tKbrEYsKuriePa',
