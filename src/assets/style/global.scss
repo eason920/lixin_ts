@@ -41,9 +41,9 @@ body {
 .home {
     background: $bg;
     padding-top: $nav_pc_height;
-    background-size: contain;
-    background-position: top;
-    background-repeat: repeat-y;
+    background-size: 80% auto;
+    background-position:center top;
+    background-repeat: repeat;
    // overflow: hidden; //試底下多的那塊哪來的
 
     &.no-padding-top {
