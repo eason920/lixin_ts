@@ -97,8 +97,11 @@ export default {
       // Total images is still the total number of <img> elements on the page.
       var totalImages = $('img').length
 
+      console.log('totalImages', totalImages)
+
       const allImagesLoaded = () => {
         this.load = false
+        $('.s1Masker').addClass('start')
       }
       const imageLoaded = () => {
         imagesLoaded++

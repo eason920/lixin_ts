@@ -27,24 +27,27 @@
       >
         <img src="./all/tree1.png" class="treeAni" />
       </div>
-      <div
-        class="s1moon"
-        data-aos-once="false"
-        data-aos="fade-in"
-        data-aos-duration="1200"
-        data-aos-delay="0"
-      >
-        <LOGO />
-        <div class="txt">
-          <div class="title1" data-aos="fade" data-aos-delay="100">
-            24~93坪<span></span>挑高4米2
-          </div>
-          <div class="title2" data-aos="fade" data-aos-delay="300">
-            新莊中正路、新泰路口
+      <div class="s1moonOuter">
+        <div
+          class="s1moon"
+          data-aos-once="false"
+          data-aos="fade-in"
+          data-aos-duration="1200"
+          data-aos-delay="0"
+        >
+          <LOGO />
+          <div class="txt">
+            <div class="title1" data-aos="fade" data-aos-delay="100">
+              24~93坪<span></span>挑高4米2
+            </div>
+            <div class="title2" data-aos="fade" data-aos-delay="300">
+              新莊中正路、新泰路口
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="s1Masker"></div>
   </div>
 </template>
 
@@ -57,12 +60,15 @@
     repeat: no-repeat
   img
     // height: 100px
-
-.s1moon
+.s1moonOuter
   @extend %fullScreen
   background:
     image: url(./all/logobg.png)
     size: cover
+
+.s1moon
+  width: 100%
+  height: 100%
   display: flex
   flex-direction: column
   align-items: center
@@ -80,7 +86,6 @@
   right: 0
   img
     width: 100%
-
 
 @media screen and (min-width: $bp-pc)
   #sec1
@@ -100,7 +105,7 @@
 
   $sw: 40vw
   $smw: 550px
-  .s1moon
+  .s1moonOuter
     width: $sw
     height: $sw
     min-width: $smw
@@ -125,12 +130,30 @@
     left: 5vw
 
   $sw: 90vw
-  .s1moon
+  .s1moonOuter
     width: $sw
     height: $sw
   .s1tree
     width: 60vw
     bottom: calc(30% + (15 - 604 * .3) * 100vw / 375)
+
+// --------------------------------
+// MASKER
+.s1Masker
+  @extend %fullScreen
+  background-color: #fff
+  z-index: 20
+  &.start
+    animation: maskOut 2s linear forwards
+
+@keyframes maskOut
+  0%
+    opacity: 1
+
+  20%
+    background-color: #f3580e
+  100%
+    opacity: 0
 </style>
 
 <!-- COPY -->
@@ -138,7 +161,7 @@
 .txt {
   // @include img_c_pc(1100, 620);
   top: calc(50% + (620 - 540) * 100vw / 1920);
-  font-size:calc(34 * 100vw / 1920);
+  font-size: calc(34 * 100vw / 1920);
   color: #000;
   font-weight: 700;
   line-height: 1.4;
@@ -163,11 +186,11 @@
 }
 
 @media screen and (max-width: 767px) {
-.txt {
-  // @include img_c_m(370, 300);
-  top: calc(40% + (300 - 604 * 0.4) * 100vw / 375);
-  font-size:calc(16 * 100vw / 375);
-}
+  .txt {
+    // @include img_c_m(370, 300);
+    top: calc(40% + (300 - 604 * 0.4) * 100vw / 375);
+    font-size: calc(16 * 100vw / 375);
+  }
 }
 </style>
 

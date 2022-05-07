@@ -2,7 +2,7 @@
   <svg
     version="1.1"
     data-aos="fade"
-    data-aos-delay="300"
+    data-aos-delay="0"
     id="logo"
     class="logo"
     xmlns="http://www.w3.org/2000/svg"
