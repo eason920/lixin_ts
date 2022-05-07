@@ -112,7 +112,7 @@
             </h3>
           </el-checkbox>
         </div>
-        <div style="margin: 0 auto;z-index:2;" v-if="!isMobile">
+        <!-- <div style="margin: 0 auto;z-index:2;" v-if="!isMobile">
           <vue-recaptcha
             :sitekey="info.recaptcha_site_key_v2"
             @verify="isVerify = true"
@@ -125,7 +125,7 @@
             @verify="isVerify = true"
             :loadRecaptchaScript="true"
           ></vue-recaptcha>
-        </div>
+        </div> -->
         <el-button
           class="form-submit"
           type="primary"
