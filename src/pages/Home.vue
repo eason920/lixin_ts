@@ -7,9 +7,10 @@
     <vue-lazy-component class="section" id="section1" @init="init">
       <S1 />
     </vue-lazy-component>
+    <!--
     <vue-lazy-component class="section" id="section2" @init="init">
       <S2 />
-    </vue-lazy-component>
+    </vue-lazy-component>  -->
     <vue-lazy-component class="section" id="section3" @init="init">
       <S3 />
     </vue-lazy-component>
@@ -52,7 +53,7 @@ import MobileNav from '@/layouts/MobileNav.vue'
 import MClose from '@/projects/ts/MClose.vue'
 import Loading from '@/components/Loading.vue'
 import S1 from '@/projects/ts/S1.vue'
-import S2 from '@/projects/ts/S2.vue'
+// import S2 from '@/projects/ts/S2.vue'
 import S3 from '@/projects/ts/S3.vue'
 import S4 from '@/projects/ts/S4.vue'
 import S5 from '@/projects/ts/S5.vue'
@@ -72,7 +73,7 @@ export default {
     MobileNav,
     MClose,
     S1,
-    S2,
+    // S2,
     S3,
     S4,
     S5,

@@ -72,7 +72,7 @@ import 'swiper/css/swiper.css'
 
 import { isMobile, isTablet } from '@/utils'
 
-let msgAry = ['尊榮玄關', '會議家教室', '青春飛輪室', '高爾夫球室', 'VIP宴會廳']
+let msgAry = ['挑高7.8米咖啡廳', '會議家教室', '青春飛輪室', '高爾夫球室', 'VIP宴會廳']
 
 export default {
   name: 'swiper-example-thumbs-gallery',

@@ -80,7 +80,7 @@ export default {
       swiperOptionS5s: {
         loop: true,
         autoplay: {
-          delay: 1500,
+          delay: 4000,
           disableOnInteraction: false
         },
         speed: 800
@@ -88,7 +88,7 @@ export default {
       swiperOptionS5: {
         loop: true,
         autoplay: {
-          delay: 1500,
+          delay: 4000,
           disableOnInteraction: false
         },
         speed: 800,
@@ -275,7 +275,12 @@ export default {
 
   // w
   .swiper-container
-    width: 32.9% // height
+    &.isSwPrev
+      width:  32.9% // height
+    &.isSwMain
+      width:  42%
+    &.isSwNext
+      width:  25% // height
 
   // gurter
   .s5boxp
@@ -288,14 +293,14 @@ export default {
   .swiper-container, // height
   .swiper-wrapper,
   .swiper-slide
-    height: 99.5625vw // w * 1.6875
+    height: 107vw // w * 1.6875
 
   // w
   .swiper-container
     &.isSwPrev, &.isSwNext
-      width: 20vw // height
+      width: 10vw // height
     &.isSwMain
-      width: 60vw
+      width: 80vw
 
   // gurter
   .s5boxp
@@ -324,7 +329,7 @@ export default {
     border: solid 7px #fff
     cursor: pointer
 
-$lr: 7.5vw
+$lr: 3.1vw
 .s5boxPre
   left: $lr
   b

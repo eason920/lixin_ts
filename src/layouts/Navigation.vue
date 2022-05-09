@@ -92,7 +92,7 @@ $gray: #FFF
     width: calc( 100% / 6 )
   a
     display: block
-    padding: 30px 0
+    padding: 1.2vw 0
     font:
       size:  1.3vw
       weight: 700
