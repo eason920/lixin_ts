@@ -116,7 +116,18 @@ export default {
       })
     })
   },
-  mounted() {},
+  mounted() {
+    const nFadeTime = 1500
+    const nRemoveTime = nFadeTime + 1000
+
+    setTimeout(() => {
+      $('.s1Masker').fadeOut(1000)
+    }, nFadeTime)
+
+    setTimeout(() => {
+      $('.s1Masker').remove()
+    }, nRemoveTime)
+  },
   methods: {
     init() {}
   }
