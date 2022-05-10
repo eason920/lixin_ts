@@ -143,17 +143,6 @@
   @extend %fullScreen
   background-color: #fff
   z-index: 20
-  &.start
-    animation: maskOut 2s linear forwards
-
-@keyframes maskOut
-  0%
-    opacity: 1
-
-  20%
-    background-color: #f3580e
-  100%
-    opacity: 0
 </style>
 
 <!-- COPY -->
@@ -195,6 +184,7 @@
 </style>
 
 <script>
+import $ from 'jquery'
 import { isMobile, isTablet } from '@/utils'
 import LOGO from '@/projects/ts/logo.vue'
 export default {
@@ -215,7 +205,18 @@ export default {
 
   created() {},
 
-  mounted() {},
+  mounted() {
+    const nFadeTime = 1500
+    const nRemoveTime = nFadeTime + 3000
+
+    setTimeout(() => {
+      $('.s1Masker').fadeOut(1000)
+    }, nFadeTime)
+
+    setTimeout(() => {
+      $('.s1Masker').remove()
+    }, nRemoveTime)
+  },
 
   computed: {}
 }
