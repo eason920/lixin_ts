@@ -107,14 +107,27 @@
             發生4級以上地震，大樓會呈現8字型的搖擺，本案採用日本進口特殊鋼材制震器，非傳統油壓式制震，避免將來漏油的風險，總樓高25樓，最高裝至22樓，充份地發揮鋼構件的優異韌性來吸收地震能量。最高規格的安全守護，打造建築地標。
           </p>
         </div>
-        <div class="s7b3b">
+        <img src="./all/logobg.png" class="s7b3b1"
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          data-aos-delay="200" />
+        <img
+          src="./all/bird2.png"
+          class="s7b3b2"
+          data-aos-once="false"
+          data-aos="fade-right"
+          data-aos-duration="2500"
+          data-aos-delay="200"
+        />
+        <!-- <div class="s7b3b">
           <img
             src="./7/img3.jpg"
             data-aos="zoom-in"
             data-aos-duration="800"
             data-aos-once="false"
           />
-        </div>
+        </div>  -->
       </div>
       <div class="wave">
         <svg
@@ -354,6 +367,14 @@ export default {
     img
       width: 24vw
       border-radius: 12vw
+  .s7b3b1
+    width: 25vw
+    margin: 3vw 0 3vw -40vw
+
+  .s7b3b2
+    width: 15vw
+    margin: 0 0 17vw -31vw
+
 @media screen and (max-width: $bp-mb)
   .s7box3
     padding: 0 8vw 0
@@ -377,6 +398,13 @@ export default {
       width: 42vw
       border-radius: 21vw
 
+  .s7b3b1
+    width: 42vw
+    margin: 5vw 0 -1vw -40vw
+  .s7b3b2
+    width: 30vw
+    margin: 0vw 0 24vw -50vw
+
 // --------------------------------
 // outer
 .sec7-outer
@@ -397,6 +425,7 @@ export default {
   bottom: -1vw
   right: 11vw
   width: 580 * 100vw / 1920
+  z-index: 3
 
 @media screen and (max-width: $bp-mb)
   #sec7
