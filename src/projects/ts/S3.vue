@@ -3,8 +3,8 @@
     <section id="sec3">
       <div class="s3box" id="box3">
         <div class="s3pic">
-          <img v-if="isMobile" src="./3/bg.jpg" class="basic" />
-          <img v-if="isMobile" src="./3/bgtm.png" class="float" />
+          <img lazy="loaded" v-if="isMobile" src="./3/bg.jpg" class="basic" />
+          <img lazy="loaded" v-if="isMobile" src="./3/bgtm.png" class="float" />
           <!-- <img src="./3/bgt.png" class="float" /> -->
           <!-- isMobile -->
         </div>

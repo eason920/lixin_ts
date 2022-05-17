@@ -73,8 +73,8 @@
         data-aos-once="false"
       >
         <div>
-          <img src="./all/logobg.png" class="pm" />
-          <img src="./all/bird1.png" class="pb" />
+          <img src="./all/logobg.png" class="pm" lazy="loaded" />
+          <img src="./all/bird1.png" class="pb" lazy="loaded" />
         </div>
       </div>
       <div
@@ -84,7 +84,7 @@
         data-aos-duration="1600"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" lazy="loaded" />
       </div>
     </section>
   </div>

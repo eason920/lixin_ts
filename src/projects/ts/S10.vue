@@ -16,7 +16,7 @@
       </div>
       <div class="s10boxc">
         <div class="aleft arrow" @click="prevBtns10">
-          <img src="../share/arrow_left.png" />
+          <img src="../share/arrow_left.png" lazy="loaded" />
         </div>
         <p class="s10txt">公設示意圖</p>
         <ul v-if="!isMobile" class="s10dot">
@@ -27,7 +27,7 @@
           ></li>
         </ul>
         <div class="aright arrow" @click="nextBtns10">
-          <img src="../share/arrow_right.png" />
+          <img src="../share/arrow_right.png" lazy="loaded" />
         </div>
       </div>
       <div class="wave">

@@ -4,7 +4,7 @@
       <div class="s6boxt">
         <img
           src="./all/logobg.png"
-          class="moon"
+          class="moon" lazy="loaded"
           data-aos="zoom-in"
           data-aos-duration="4800"
           data-aos-once="false"
@@ -38,7 +38,7 @@
       </div>
       <div class="s6boxp">
         <img
-          src="./6/1.jpg"
+          src="./6/1.jpg" lazy="loaded"
           data-aos="fade-up"
           data-aos-duration="1200"
           data-aos-once="false"
@@ -51,7 +51,7 @@
         data-aos-duration="800"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" lazy="loaded" />
       </div>
     </section>
     <section id="sec6-2">
