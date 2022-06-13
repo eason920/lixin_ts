@@ -8,7 +8,7 @@
         data-aos-once="false"
         data-aos="fade-left"
         data-aos-duration="2800"
-        data-aos-delay="300"
+        data-aos-delay="300" loading="lazy"
       />
       <img
         src="./all/bird2.png"
@@ -16,7 +16,7 @@
         data-aos-once="false"
         data-aos="fade-right"
         data-aos-duration="2500"
-        data-aos-delay="200"
+        data-aos-delay="200" loading="lazy"
       />
       <div
         class="s1tree"
@@ -25,7 +25,7 @@
         data-aos-duration="800"
         data-aos-delay="100"
       >
-        <img src="./all/tree1.png" class="treeAni" />
+        <img src="./all/tree1.png" class="treeAni" loading="lazy" />
       </div>
       <div class="s1moonOuter">
         <div
@@ -38,7 +38,7 @@
           <LOGO />
           <div class="txt">
             <div class="title1" data-aos="fade" data-aos-delay="100">
-              24~93坪<span></span>挑高4米2
+              24‧39‧60坪<span></span>挑高4米2
             </div>
             <div class="title2" data-aos="fade" data-aos-delay="300">
               新莊中正路、新泰路口
@@ -158,7 +158,7 @@
   letter-spacing: 0.01em;
   .title1 {
     transform: scaleX(5);
-    font-size: 1.4em;
+    font-size: 1.2em;
     span {
       display: inline-block;
       width: 2px;

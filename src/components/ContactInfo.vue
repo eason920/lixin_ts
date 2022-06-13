@@ -29,7 +29,7 @@
       /> -->
       <div class="MoonBoxOuter">
         <div class="MoonBox">
-          <LOGO />
+          <LOGO loading="lazy" />
         </div>
       </div>
       <div class="info">

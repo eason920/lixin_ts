@@ -3,8 +3,8 @@
     <section id="sec3">
       <div class="s3box" id="box3">
         <div class="s3pic">
-          <img lazy="loaded" v-if="isMobile" src="./3/bg.jpg" class="basic" />
-          <img lazy="loaded" v-if="isMobile" src="./3/bgtm.png" class="float" />
+          <img loading="lazy" v-if="isMobile" src="./3/bg.jpg" class="basic" />
+          <img loading="lazy" v-if="isMobile" src="./3/bgtm.png" class="float" />
           <!-- <img src="./3/bgt.png" class="float" /> -->
           <!-- isMobile -->
         </div>
@@ -25,7 +25,7 @@
         <img
           class="finger"
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAABJCAYAAACuPXHDAAAACXBIWXMAABYlAAAWJQFJUiTwAAAErElEQVR4nO2cv3LTQBDGvzCpGGbkki4u6G2eIE5FGfMEVloazBMQnoA00OI8AaGkQn4ClCdAfgLkGUpmjrnMKuxsJFmK7p9kfzOa2JYs636629vdW+VIKYUWiunQVZsv9VCt23ncEuIXep0BSAYKccbaicYwdY9ssMXqv1YNv9PnbcXaGzdpxwFi9dYK5gGiIZi+Ic6UUkvapn2G6QviXCmVqYfKCG7vYPqAGJcAlJr3DaZriOMSaIlSKhWf5UqpUZ9guoSotysBi9vFmYC5DBBkJczCIX8D4BO9/k5O6KyjY1vmsE/Z60sAqTj+GsCC3uvfv6o4x6jjtXWRZvMcwCty3J8C+FxQlkPLhMruZsLOWzap8FGRNDhHCEp5j/xNf/8CuAXwx9PdzhockzY4xraeAZhQiH3HrgD5moaW3vmChlUIF1ympeffnxKrY+p0mh2e0M6c4OkdER04rT/fXqqAGBGrGbG7B3mAuVuVECFA4gCzUrUQUQISB5gPtBMiKkDiAPNejSCiBiQOMJtDxA6Q2GOYrSCiAUjsIczWENFi8auAWcTPTSKQvipj7WsEsQ1IDhNNT95TPaqdbUAOHSBX63a2BelSp9SglK2j34R6M5tMNj4VEdAF5f4yymMGp9BBSmmw70MsmQkZpHY9zgBcUOZ8y/bpHqrYltGwj2vOZ1Uhg8zJLq4I0JjglukEwDkb/nPXFxvyZCOVE6BfO47TUL8CeMeS05lt37dPIEEwNgQLNPQzikbmbOFM62PJ97+RCTBuY/s22aCkZ3H7+FLYUqli+KdkKoypjyDrlIretq0AO6FjjS3rDg0kqHcWKmAd0SLVmu2LKtbNHyXTIMcUp84CzBDd0HV9YJ8tTPVKUyBH5KroGfUHbT/Jfnnz7Sp0KYa7kRtuAqSGmFEoJ3VCxj3xXGYiZXzN3gRIbWci9n5T4jifCts1OHX1I0fCd7tmQ3lMM2jRU8t6rFRCE0OduhZ3WVHXHsnty1bYw4wafR1IW63KZGRTlSeMCfjEUZty5uY4q1/qCpJHGSdiXYdrSTO5C6U+hn/XoZ0JJ/emwp1IKM4drEzM2jxjXbdcO+jnF02A1OAu2PuIoEm/cajPLt7JVGSzovxfoUmJE57vyMy4VBNXrJVMxtpXwtWZlAznIoFwFFAPNbIqaTppEQuY5yYzLIYkTY4RF8lGGi0WM/lbH2soNbKSlbKVj5xTzF1oZToj3UH8OtamTmoLZC56YRSQ+8NBGqvasJkhT8VMfhrAox0QUY+xELLtPwd5jBLmbmzJRvksC8xZ2u/MlPfgYs0mZv5j5Ll2Zyxyp8ZuqAuQmXCBFh7Xc/iw3vQNJKgXbsR7H+IgjQYELpdjObxzT+7QIECuPPfKKSt1QZ9BQthK19EOXwa5Ne05uAbJnfLIMUz+W70vospFptwVyLkY1saXhn3U/vBGuARZaG0jIPANMnLkU1od1vAEMheVGLZBzkQ0Y6Xiw1dZH08WuABZaG3rOR1fILmNcgnS2vKGL5C8Qbar1PiNGhxILpulLDLbY62EJQQbaVM8nt/YfI7R1+MhskHWs8u2k8lDLMavktWnavcJpD1zAuAfMiguMm+CB/8AAAAASUVORK5CYII="
-          lazy="loaded"
+          loading="lazy"
         />
       </div>
     </section>

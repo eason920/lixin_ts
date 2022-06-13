@@ -3,20 +3,20 @@
     <section id="sec10">
       <div class="s10boxp">
         <swiper :options="swiperOptions10s" ref="swipers10pre" class="isSwPrev">
-          <swiper-slide v-for="item in 5" :key="'s10s' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s10s' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
         <!-- main vvv -->
         <swiper :options="swiperOptions10" ref="swipers10" class="isSwMain">
-          <swiper-slide v-for="item in 5" :key="'s10' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s10' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
         <!-- main ^^^ -->
         <swiper :options="swiperOptions10s" ref="swipers10nex" class="isSwNext">
-          <swiper-slide v-for="item in 5" :key="'s10s' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s10s' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
       </div>
       <div class="s10boxc">
         <div class="aleft arrow" @click="prevBtns10">
-          <img src="../share/arrow_left.png" lazy="loaded" />
+          <img src="../share/arrow_left.png" loading="lazy" />
         </div>
         <p class="s10txt">公設示意圖</p>
         <ul v-if="!isMobile" class="s10dot">
@@ -27,7 +27,7 @@
           ></li>
         </ul>
         <div class="aright arrow" @click="nextBtns10">
-          <img src="../share/arrow_right.png" lazy="loaded" />
+          <img src="../share/arrow_right.png" loading="lazy" />
         </div>
       </div>
       <div class="wave">
@@ -88,6 +88,9 @@ export default {
       isTablet,
       swiperOptions10: {
         loop: true,
+        lazy: {
+          loadPrevNext: true,
+        },
         autoplay: {
           delay: 4000,
           disableOnInteraction: false
@@ -109,6 +112,9 @@ export default {
       },
       swiperOptions10s: {
         loop: true,
+        lazy: {
+          loadPrevNext: true,
+        },
         autoplay: {
           delay: 4000,
           disableOnInteraction: false

@@ -4,7 +4,7 @@
       <div class="s2video">
         <iframe
           width="560"
-          height="315"
+          height="315" loading="lazy"
           src="https://www.youtube.com/embed/2cWKFrtwTRs?playlist=2cWKFrtwTRs&loop=1&autoplay=1&controls=0&mute=1&rel=0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

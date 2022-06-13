@@ -35,7 +35,7 @@
           data-aos-duration="800"
           data-aos-delay="0"
         >
-          <img src="./9/1.jpg" alt="十邑設計-王勝正設計師" lazy="loaded" />
+          <img src="./9/1.jpg" alt="十邑設計-王勝正設計師" loading="lazy" />
           <span>十邑設計<br><br>王勝正設計師</span>
         </div>
       </div>
@@ -46,19 +46,19 @@
         data-aos-duration="2000"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" lazy="loaded" class="treeAni" />
+        <img src="./all/tree1.png" loading="lazy" class="treeAni" />
       </div>
       <div class="s9moon">
         <img
           src="./all/logobg.png"
-          class="moon" lazy="loaded"
+          class="moon" loading="lazy"
           data-aos="zoom-in"
           data-aos-duration="2000"
           data-aos-once="false"
         />
         <img
           src="./all/bird1.png"
-          class="bird" lazy="loaded"
+          class="bird" loading="lazy"
           data-aos="zoom-in"
           data-aos-duration="2400"
           data-aos-once="false"

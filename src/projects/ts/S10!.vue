@@ -5,7 +5,7 @@
         <swiper :options="swiperOptions10" ref="swipers10" class="isSwMain"
         @mouseenter.native="mouseEnter"
         @mouseleave.native="mouseLeave">
-          <swiper-slide v-for="item in 5" :key="'s10' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s10' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
       </div>
       <div class="s10boxc">
@@ -83,6 +83,9 @@ export default {
       swiperOptions10: {
         slidesPerView: 3, 
         loop: true,
+        lazy: {
+          loadPrevNext: true,
+        },
         spaceBetween: 20,
         autoplay: {
           delay: 6000,

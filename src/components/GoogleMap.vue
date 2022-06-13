@@ -1,6 +1,6 @@
 <template>
   <div class="google-map" id="google-map">
-    <iframe
+    <iframe loading="lazy"
       title="googlemap"
       :src="googleSrc"
       width="100%"

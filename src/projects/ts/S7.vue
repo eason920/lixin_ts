@@ -1,8 +1,8 @@
 <template>
   <div class="relative sec7-outer">
     <section id="sec7">
-      <img src="./7/exterior.png" alt="外觀" class="bg" v-if="!isMobile">
-      <img src="./7/exterior_m.png" alt="外觀" class="bg" v-if="isMobile">
+      <img src="./7/exterior.png" alt="外觀" class="bg" v-if="!isMobile" loading="lazy">
+      <img src="./7/exterior_m.png" alt="外觀" class="bg" v-if="isMobile" loading="lazy">
       <div class="s7box1">
         <div class="s7b1l">
           <div
@@ -65,21 +65,21 @@
             src="./7/src.png"
             data-aos="zoom-in"
             data-aos-duration="800"
-            data-aos-once="false"
+            data-aos-once="false" loading="lazy"
           />
           <img
             v-if="!isMobile"
             src="./7/cft.png"
             data-aos="zoom-in"
             data-aos-duration="800"
-            data-aos-once="false"
+            data-aos-once="false" loading="lazy"
           />
           <img
             v-else
             src="./7/cft_m.png"
             data-aos="zoom-in"
             data-aos-duration="800"
-            data-aos-once="false"
+            data-aos-once="false" loading="lazy"
           />
         </div>
       </div>
@@ -94,8 +94,8 @@
           <img src="./all/tree1.png" class="treeAni" />
         </div>
         <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
-          <img v-if="!isMobile" src="./7/img2.png" />
-          <img v-else src="./7/img2m.png" />
+          <img v-if="!isMobile" src="./7/img2.png" loading="lazy" />
+          <img v-else src="./7/img2m.png" loading="lazy" />
         </div>
       </div>
       <div class="s7box3">

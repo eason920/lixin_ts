@@ -13,7 +13,7 @@
         <swiper :options="swiperOptions8" ref="swipers8"
         @mouseenter.native="mouseEnter"
         @mouseleave.native="mouseLeave">
-          <swiper-slide v-for="(item, i) in swipList" :key="'s8' + i">
+          <swiper-slide v-for="(item, i) in swipList" :key="'s8' + i" loading="lazy" class="swiper-lazy">
             <div class="s8item">
               <div class="s8tx">{{ item }}</div>
             </div>
@@ -77,6 +77,9 @@ export default {
         loop: true,
         // initialSlide: 0, // 最初 pic index
         // slidesPerView: 'auto',
+        lazy: {
+          loadPrevNext: true,
+        },
         spaceBetween: 0,
         autoplay: {
           delay: 2500,

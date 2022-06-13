@@ -9,7 +9,7 @@
         data-aos-once="false"
       >
         <swiper :options="swiperOptions4" ref="swipers4">
-          <swiper-slide v-for="(item, i) in swipList" :key="'s4' + i">
+          <swiper-slide v-for="(item, i) in swipList" :key="'s4' + i" loading="lazy" class="swiper-lazy">
             <div class="s4item">
               <div class="s4tx">{{ item }}</div>
             </div>
@@ -73,8 +73,8 @@
         data-aos-once="false"
       >
         <div>
-          <img src="./all/logobg.png" class="pm" lazy="loaded" />
-          <img src="./all/bird1.png" class="pb" lazy="loaded" />
+          <img src="./all/logobg.png" class="pm" loading="lazy" />
+          <img src="./all/bird1.png" class="pb" loading="lazy" />
         </div>
       </div>
       <div
@@ -84,7 +84,7 @@
         data-aos-duration="1600"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" class="treeAni" lazy="loaded" />
+        <img src="./all/tree1.png" class="treeAni" loading="lazy" />
       </div>
     </section>
   </div>
@@ -124,6 +124,9 @@ export default {
         // initialSlide: 0, // 最初 pic index
         // slidesPerView: 'auto',
         spaceBetween: 0,
+        lazy: {
+          loadPrevNext: true,
+        },
         autoplay: {
           delay: 1500,
           disableOnInteraction: false // 換頁後是否停止 autoplay

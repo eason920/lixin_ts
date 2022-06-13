@@ -41,15 +41,15 @@
         <div class="s5boxPre" @click="prevBtnS5"><b></b></div>
         <div class="s5boxNex" @click="nextBtnS5"><b></b></div>
         <swiper :options="swiperOptionS5s" ref="swiperS5pre" class="isSwPrev">
-          <swiper-slide v-for="item in 5" :key="'s5s' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s5s' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
         <!-- main vvv -->
         <swiper :options="swiperOptionS5" ref="swiperS5" class="isSwMain">
-          <swiper-slide v-for="item in 5" :key="'s5' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s5' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
         <!-- main ^^^ -->
         <swiper :options="swiperOptionS5s" ref="swiperS5nex" class="isSwNext">
-          <swiper-slide v-for="item in 5" :key="'s5s' + item"> </swiper-slide>
+          <swiper-slide v-for="item in 5" :key="'s5s' + item" loading="lazy" class="swiper-lazy"> </swiper-slide>
         </swiper>
         <div class="s5tx">現場實景</div>
       </div>
@@ -79,6 +79,9 @@ export default {
       isTablet,
       swiperOptionS5s: {
         loop: true,
+        lazy: {
+          loadPrevNext: true,
+        },
         autoplay: {
           delay: 4000,
           disableOnInteraction: false
@@ -87,6 +90,9 @@ export default {
       },
       swiperOptionS5: {
         loop: true,
+        lazy: {
+          loadPrevNext: true,
+        },
         autoplay: {
           delay: 4000,
           disableOnInteraction: false
