@@ -51,7 +51,8 @@
         data-aos-duration="800"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" class="treeAni" loading="lazy" />
+        <img src="./all/tree1.png" class="treeAni" loading="lazy" v-if="!isMobile" />
+        <img src="./all/tree1_m.png" class="treeAni" loading="lazy" v-else />
       </div>
     </section>
     <section id="sec6-2">

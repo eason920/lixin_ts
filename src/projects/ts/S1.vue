@@ -25,7 +25,8 @@
         data-aos-duration="800"
         data-aos-delay="100"
       >
-        <img src="./all/tree1.png" class="treeAni" loading="lazy" />
+        <img src="./all/tree1.png" class="treeAni" loading="lazy" v-if="!isMobile" />
+        <img src="./all/tree1_m.png" class="treeAni" loading="lazy" v-else />
       </div>
       <div class="s1moonOuter">
         <div
@@ -47,7 +48,7 @@
         </div>
       </div>
     </section>
-    <div class="s1Masker"></div>
+   <!-- <div class="s1Masker"></div> -->
   </div>
 </template>
 

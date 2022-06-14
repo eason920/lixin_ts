@@ -91,7 +91,8 @@
           data-aos-duration="800"
           data-aos-delay="0"
         >
-          <img src="./all/tree1.png" class="treeAni" />
+          <img src="./all/tree1.png" class="treeAni" v-if="!isMobile" />
+        <img src="./all/tree1_m.png" class="treeAni" loading="lazy" v-else />
         </div>
         <div data-aos="zoom-in" data-aos-duration="800" data-aos-once="false">
           <img v-if="!isMobile" src="./7/img2.png" loading="lazy" />

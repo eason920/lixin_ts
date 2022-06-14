@@ -46,7 +46,8 @@
         data-aos-duration="2000"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" loading="lazy" class="treeAni" />
+        <img src="./all/tree1.png" loading="lazy" class="treeAni" v-if="!isMobile" />
+        <img src="./all/tree1_m.png" class="treeAni" loading="lazy" v-else />
       </div>
       <div class="s9moon">
         <img
