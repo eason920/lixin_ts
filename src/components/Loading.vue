@@ -23,7 +23,6 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  transition: opacity 0.5s;
 
   .loading-icon {
     width: 150px;
@@ -35,7 +34,7 @@
   }
 
   &.hide {
-    opacity:0;
+    animation: hide 1s ease-in 0s forwards;
   }
 
   &.none {
@@ -44,7 +43,7 @@
 
   @keyframes hide {
     0% {
-      opacity: 1;
+      oacity: 1;
       left: 0;
       display: block;
     }

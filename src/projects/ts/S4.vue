@@ -84,8 +84,7 @@
         data-aos-duration="1600"
         data-aos-delay="0"
       >
-        <img src="./all/tree1.png" class="treeAni" loading="lazy"  v-if="!isMobile" />
-        <img src="./all/tree1_m.png" class="treeAni" loading="lazy" v-else />
+        <img src="./all/tree1.png" class="treeAni" loading="lazy" />
       </div>
     </section>
   </div>
@@ -200,25 +199,24 @@ export default {
       font-size: 32px
 
 // 圖片
-@media screen and (max-width: $bp-pc)
-  .swiper-slide
-    background:
-      position: center
-      size: cover
-    &:nth-child(1), &:nth-child(6)
-      background-image: url('./4/5.jpg')
+.swiper-slide
+  background:
+    position: center
+    size: cover
+  &:nth-child(1), &:nth-child(6)
+    background-image: url('./4/5.jpg')
 
-    &:nth-child(2), &:nth-child(7)
-      background-image: url('./4/1.jpg')
+  &:nth-child(2), &:nth-child(7)
+    background-image: url('./4/1.jpg')
 
-    &:nth-child(3), &:nth-child(8)
-      background-image: url('./4/2.jpg')
+  &:nth-child(3), &:nth-child(8)
+    background-image: url('./4/2.jpg')
 
-    &:nth-child(4)
-      background-image: url('./4/3.jpg')
+  &:nth-child(4)
+    background-image: url('./4/3.jpg')
 
-    &:nth-child(5)
-      background-image: url('./4/4.jpg')
+  &:nth-child(5)
+    background-image: url('./4/4.jpg')
 
 @media screen and (max-width: $bp-mb)
   .swiper-slide
@@ -239,7 +237,6 @@ export default {
 
     &:nth-child(5)
       background-image: url('./4/4m.jpg')
-
 // 總高
 @media screen and (min-width: $bp-pc)
   .swiper-container, // height 1
