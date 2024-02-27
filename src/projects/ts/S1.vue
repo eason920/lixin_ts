@@ -39,7 +39,7 @@
           <LOGO />
           <div class="txt">
             <div class="title1" data-aos="fade" data-aos-delay="100">
-              24‧39‧60坪<span></span>挑高4米2
+              39‧60坪<span></span>挑高4米2
             </div>
             <div class="title2" data-aos="fade" data-aos-delay="300">
               新莊中正路、新泰路口

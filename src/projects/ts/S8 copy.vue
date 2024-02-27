@@ -13,41 +13,42 @@
         <swiper :options="swiperOptions8" ref="swipers8"
         @mouseenter.native="mouseEnter"
         @mouseleave.native="mouseLeave">
-  <swiper-slide v-for="(item, i) in swipList" :key="'s8' + i" loading="lazy" class="swiper-lazy">
-    <div class="s8item">
-      <img :src="item.src" :alt="item.name">
-      <div class="s8tx">{{ item.name }}</div>
-    </div>
-  </swiper-slide>
-  <template v-slot:button-prev>
-    <div class="swiper-button-prev s8pv" @click="prevBtns8"></div>
-  </template>
-  <template v-slot:button-next>
-    <div class="swiper-button-next s8pv" @click="nextBtns8"></div>
-  </template>
-  <template v-slot:pagination>
-    <div class="swiper-pagination"></div>
-  </template>
-</swiper>
-<ul class="s8sw">
-  <li
-    :class="[{ active: i === current }]"
-    v-for="(item, i) in dotList"
-    :key="'sw' + i"
-    @click="fnSW(i)"
-  >
-    {{ item }}
-  </li>
-</ul>
+          <swiper-slide v-for="(item, i) in swipList" :key="'s8' + i" loading="lazy" class="swiper-lazy">
+            <div class="s8item">
+              <div class="s8tx">{{ item }}</div>
+            </div>
+          </swiper-slide>
+          <template v-slot:button-prev>
+            <div class="swiper-button-prev s8pv" @click="prevBtns8"></div>
+          </template>
+          <template v-slot:button-next>
+            <div class="swiper-button-next s8pv" @click="nextBtns8"></div>
+          </template>
+          <template v-slot:pagination>
+            <div class="swiper-pagination"></div>
+          </template>
+        </swiper>
+        <ul class="s8sw">
+          <li
+            :class="[{ active: i === current }]"
+            v-for="(item, i) in dotList"
+            :key="'sw' + i"
+            @click="fnSW(i)"
+          >
+            {{ item }}
+          </li>
+        </ul>
       </div>
     </section>
   </div>
 </template>
+
 <script>
 import { isMobile, isTablet } from '@/utils'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 import $ from 'jquery'
+let page = 0
 
 export default {
   components: {
@@ -60,24 +61,26 @@ export default {
       isMobile,
       isTablet,
       swipList: [
-        { name: '39坪-樣品屋實拍圖1', src: require('./8/4.jpg')},
-        { name: '39坪-樣品屋實拍圖2', src: require('./8/5.jpg')},
-        { name: '39坪-樣品屋實拍圖3', src: require('./8/6.jpg')},
-        { name: '65坪-樣品屋實拍圖4', src: require('./8/7.jpg')},
-        { name: '65坪-樣品屋實拍圖5', src: require('./8/8.jpg')},
-        { name: '65坪-樣品屋實拍圖6', src: require('./8/9.jpg')}
+        '39坪-樣品屋實拍圖',
+        '39坪-樣品屋實拍圖',
+        '39坪-樣品屋實拍圖',
+        '65坪-樣品屋實拍圖',
+        '65坪-樣品屋實拍圖',
+        '65坪-樣品屋實拍圖'
       ],
       dotList: ['39坪', '65坪'],
-      current: 0,
+      current: 2,
       swiperOptions8: {
         loop: true,
+        // initialSlide: 0, // 最初 pic index
+        // slidesPerView: 'auto',
         lazy: {
           loadPrevNext: true,
         },
         spaceBetween: 0,
         autoplay: {
           delay: 2500,
-          disableOnInteraction: false,
+          disableOnInteraction: false, // 換頁後是否停止 autoplay
           stopOnLastSlide: false,
         },
         speed: 800,
@@ -89,10 +92,62 @@ export default {
         },
         on: {
           slideChangeTransitionStart: function() {
-            let eq = this.activeIndex;
-            let buttonIndex = Math.floor((eq - 1) / 3) % 2; // 计算当前图片所在的组索引
-            $('.s8sw li').removeClass('active');
-            $('.s8sw li').eq(buttonIndex).addClass('active'); // 设置对应组的按钮为亮起状态
+            let eq = this.activeIndex
+         //   console.log(eq)
+            switch (eq) {
+              case 1:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
+                  .addClass('active')
+                break
+              case 4:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(1)
+                  .addClass('active')
+                break
+              case 7:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(2)
+                  .addClass('active')
+                break
+              case 10:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
+                  .addClass('active')
+                break
+              case 3:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(0)
+                  .addClass('active')
+                break
+              case 6:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(1)
+                  .addClass('active')
+                break
+              case 9:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(2)
+                  .addClass('active')
+                break
+              case 0:
+                $('.s8sw li').removeClass('active')
+                $('.s8sw li')
+                  .eq(2)
+                  .addClass('active')
+                break
+              default:
+            }
+          },
+          slideChangeTransitionEnd: function() {
+            // let eq = this.activeIndex
           }
         }
       }
@@ -106,22 +161,44 @@ export default {
       this.$refs.swipers8.$swiper.autoplay.start();
     },
     prevBtns8() {
-      this.$refs.swipers8.$swiper.slidePrev();
+      this.$refs.swipers8.$swiper.slidePrev()
     },
     nextBtns8() {
-      this.$refs.swipers8.$swiper.slideNext();
+      this.$refs.swipers8.$swiper.slideNext()
+    },
+    fnDotChange(i) {
+      let eq = i - 1
+      // console.log(eq)
+      if (eq >= 5) {
+        eq = eq - 5
+      }
+      // console.log(eq)
+      this.$refs.swipers8.$swiper.slideTo(eq)
     },
     fnSW(i) {
-      this.current = i;
-      const eq = i * 3; // 根据底部按钮索引来计算显示的图片索引
-      this.$refs.swipers8.$swiper.slideTo(eq);
-    },
-    getImageUrl(index) {
-      return this.swipList[index].src;
+  //   console.log(i)
+      this.current = i
+      let eq = 1
+      switch (i) {
+        case 0:
+          eq = 1
+          break
+        case 1:
+          eq = 4
+          break
+        case 2:
+          eq = 7
+          break
+        default:
+      }
+      this.$refs.swipers8.$swiper.slideTo(eq)
     }
   },
+
   created() {},
+
   mounted() {},
+
   computed: {}
 }
 </script>
@@ -152,6 +229,23 @@ export default {
   background:
     position: center
     size: cover
+  &:nth-child(1), &:nth-child(7)
+    background-image: url('./8/9.jpg')
+
+  &:nth-child(2), &:nth-child(8)
+    background-image: url('./8/4.jpg')
+
+  &:nth-child(3), &:nth-child(9)
+    background-image: url('./8/5.jpg')
+
+  &:nth-child(4)
+    background-image: url('./8/6.jpg')
+
+  &:nth-child(5)
+    background-image: url('./8/7.jpg')
+
+  &:nth-child(6)
+    background-image: url('./8/8.jpg')
 
 // 總高
 .swiper-container
@@ -393,12 +487,11 @@ $mw: 22vw
     top: -15px
     height: 30px
     border-radius: 15px
-    justify-content: center
+    width: 80vw
     justify-content: space-between
-    white-space: nowrap
     li
       justify-content: center
-      width: 6em
+      width: 33%
       font-size: 16px
       &.active
         border-radius: 30px
