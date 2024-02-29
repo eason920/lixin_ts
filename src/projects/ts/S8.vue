@@ -174,6 +174,10 @@ export default {
 .swiper-slide,
 .s8item
   height: 56.25vw
+
+  img 
+    width: 100%
+
 @media screen and (min-width: $bp-pc)
 
 // --------------------------------
